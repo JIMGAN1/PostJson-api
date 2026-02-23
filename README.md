@@ -23,7 +23,7 @@
 
 ```bash
 # 克隆项目
-git clone https://github.com/yourusername/PostJson.git
+git clone https://github.com/JIMGAN1/PostJson.git
 
 # 进入项目目录
 cd PostJson
