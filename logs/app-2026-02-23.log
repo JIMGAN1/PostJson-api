@@ -1,0 +1,27 @@
+2026/02/23 18:43:42 main.go:138: 日志文件切换到: ./logs/app-2026-02-23.log
+2026/02/23 18:44:35 middleware.go:37: [GET] /health 127.0.0.1:11018 200 0s Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36 Edg/145.0.0.0
+2026/02/23 18:44:35 middleware.go:37: [GET] /favicon.ico 127.0.0.1:11018 404 0s Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36 Edg/145.0.0.0
+2026/02/23 18:44:38 middleware.go:37: [GET] /health 127.0.0.1:11018 200 0s Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36 Edg/145.0.0.0
+2026/02/23 18:49:47 middleware.go:37: [POST] /api-json 127.0.0.1:4486 400 0s Apifox/1.0.0 (https://apifox.com)
+2026/02/23 18:49:57 middleware.go:37: [POST] /api-json 127.0.0.1:4486 400 0s Apifox/1.0.0 (https://apifox.com)
+2026/02/23 19:06:08 main.go:138: 日志文件切换到: ./logs/app-2026-02-23.log
+2026/02/23 19:10:31 main.go:138: 日志文件切换到: ./logs/app-2026-02-23.log
+2026/02/23 19:18:19 postjson.go:142: 日志文件切换到: ./logs/app-2026-02-23.log
+2026/02/23 19:18:37 middleware.go:37: [POST] /api-json 127.0.0.1:13281 400 0s Apifox/1.0.0 (https://apifox.com)
+2026/02/23 19:18:40 middleware.go:37: [POST] /api-json 127.0.0.1:13281 400 0s Apifox/1.0.0 (https://apifox.com)
+2026/02/23 19:19:24 postjson.go:139: 日志文件切换到: ./logs/app-2026-02-23.log
+2026/02/23 19:21:29 postjson.go:138: 日志文件切换到: ./logs/app-2026-02-23.log
+2026/02/23 19:22:37 postjson.go:138: 日志文件切换到: ./logs/app-2026-02-23.log
+2026/02/23 19:22:41 postjson.go:92: 正在关闭服务器...
+2026/02/23 19:22:41 postjson.go:102: 服务器已关闭
+2026/02/23 19:23:37 postjson.go:138: 日志文件切换到: ./logs/app-2026-02-23.log
+2026/02/23 19:23:50 postjson.go:138: 日志文件切换到: ./logs/app-2026-02-23.log
+2026/02/23 19:24:00 postjson.go:92: 正在关闭服务器...
+2026/02/23 19:24:00 postjson.go:102: 服务器已关闭
+2026/02/23 19:31:36 postjson.go:138: 日志文件切换到: ./logs/app-2026-02-23.log
+2026/02/23 19:31:53 postjson.go:138: 日志文件切换到: ./logs/app-2026-02-23.log
+2026/02/23 19:32:12 middleware.go:37: [POST] /api-json 127.0.0.1:6430 400 0s Apifox/1.0.0 (https://apifox.com)
+2026/02/23 19:35:16 middleware.go:37: [GET] /health 127.0.0.1:6356 200 0s Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36 Edg/145.0.0.0
+2026/02/23 19:35:17 middleware.go:37: [GET] /health 127.0.0.1:6356 200 0s Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36 Edg/145.0.0.0
+2026/02/23 19:47:43 postjson.go:92: 正在关闭服务器...
+2026/02/23 19:47:43 postjson.go:102: 服务器已关闭
