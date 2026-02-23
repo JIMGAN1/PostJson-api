@@ -2,6 +2,7 @@ package main
 
 import (
 	"context"
+	"crypto/tls"
 	"flag"
 	"fmt"
 	"io"
@@ -12,6 +13,7 @@ import (
 	"syscall"
 	"time"
 
+	"golang.org/x/crypto/acme/autocert"
 	"golang.org/x/time/rate"
 
 	"PostJson/config"
@@ -26,6 +28,11 @@ func main() {
 
 	// 加载配置
 	cfg, err := config.LoadConfig(*configPath)
+	// log.Printf("[配置调试] 最终 ReadTimeout: %v", cfg.Server.ReadTimeout)
+	// log.Printf("[配置调试] 最终 WriteTimeout: %v", cfg.Server.WriteTimeout)
+	// log.Printf("[配置调试] 最终 IdleTimeout: %v", cfg.Server.IdleTimeout)
+	// log.Printf("[配置调试] 最终 TimeoutSeconds: %v", cfg.Request.TimeoutSeconds)
+	// log.Printf("[配置调试] 最终 TokenExpiry: %v", cfg.Auth.TokenExpiry)
 	if err != nil {
 		log.Fatalf("加载配置失败: %v", err)
 	}
@@ -37,29 +44,32 @@ func main() {
 
 	// 创建处理器
 	jsonHandler := handler.NewJSONHandler(&cfg.Request)
+	authHandler := handler.NewAuthHandler(&cfg.Auth)
 
 	// 创建路由器
 	mux := http.NewServeMux()
-	mux.HandleFunc("/api-json", jsonHandler.ProcessJSON)
+
+	// 公开接口（不需要认证）
 	mux.HandleFunc("/health", healthCheck)
-	//测试panic
-	// mux.HandleFunc("/test-panic", jsonHandler.TestPanic)
+	mux.HandleFunc("/auth/login", authHandler.Login)
+	mux.HandleFunc("/auth/register", authHandler.Register) //用户注册接口
+
+	// 需要认证的用户相关接口
+	apiMux := http.NewServeMux()
+	apiMux.HandleFunc("/profile", authHandler.Profile)   // /api/profile 用户数据获取
+	apiMux.HandleFunc("/settings", authHandler.Settings) // /api/settings 用户数据修改
+
+	// 业务接口
+	apiMux.HandleFunc("/json", jsonHandler.ProcessJSON) // /api/json
+	stripAndServeAPIMux := http.StripPrefix("/api", apiMux)
+	mux.Handle("/api/", middleware.AuthMiddleware(&cfg.Auth)(stripAndServeAPIMux))
+
 	// 构建中间件链
 	var handler http.Handler = mux
-
-	// 安全中间件
 	handler = middleware.Security(handler)
-
-	// 恢复中间件（防止 panic）
 	handler = middleware.Recovery(handler)
-
-	// 日志中间件
 	handler = middleware.Logger(handler)
-
-	// 跨域中间件
 	handler = middleware.Cors(handler)
-
-	// 限流中间件（如果启用）
 	if cfg.RateLimit.Enabled {
 		limiter := rate.NewLimiter(
 			rate.Limit(cfg.RateLimit.RequestsPerSecond),
@@ -68,7 +78,16 @@ func main() {
 		handler = middleware.RateLimiter(limiter)(handler)
 	}
 
-	// 创建 HTTP 服务器
+	// 根据配置启动HTTP或HTTPS服务
+	if cfg.HTTPS.Enabled {
+		startHTTPSServer(cfg, handler)
+	} else {
+		startHTTPServer(cfg, handler)
+	}
+}
+
+// startHTTPServer 启动HTTP服务器
+func startHTTPServer(cfg *config.AppConfig, handler http.Handler) {
 	srv := &http.Server{
 		Addr:           fmt.Sprintf(":%d", cfg.Server.Port),
 		Handler:        handler,
@@ -80,19 +99,89 @@ func main() {
 
 	// 优雅关闭
 	go func() {
-		log.Printf("服务器启动在 :%d", cfg.Server.Port)
+		log.Printf("HTTP服务器启动在 :%d", cfg.Server.Port)
 		if err := srv.ListenAndServe(); err != nil && err != http.ErrServerClosed {
 			log.Fatalf("服务器启动失败: %v", err)
 		}
 	}()
 
-	// 等待中断信号
+	waitForShutdown(srv)
+}
+
+// startHTTPSServer 启动HTTPS服务器
+func startHTTPSServer(cfg *config.AppConfig, handler http.Handler) {
+	// 如果启用了自动证书且配置了域名
+	if cfg.HTTPS.AutoCert && cfg.HTTPS.Domain != "" {
+		certManager := autocert.Manager{
+			Prompt:     autocert.AcceptTOS,
+			HostPolicy: autocert.HostWhitelist(cfg.HTTPS.Domain),
+			Cache:      autocert.DirCache("./certs"),
+			Email:      cfg.HTTPS.Email,
+		}
+
+		srv := &http.Server{
+			Addr:    ":https",
+			Handler: handler,
+			TLSConfig: &tls.Config{
+				GetCertificate: certManager.GetCertificate,
+				MinVersion:     tls.VersionTLS12,
+			},
+			ReadTimeout:    cfg.Server.ReadTimeout,
+			WriteTimeout:   cfg.Server.WriteTimeout,
+			IdleTimeout:    cfg.Server.IdleTimeout,
+			MaxHeaderBytes: cfg.Server.MaxHeaderBytes,
+		}
+
+		// 启动HTTP重定向服务
+		go func() {
+			httpServer := &http.Server{
+				Addr:    ":http",
+				Handler: certManager.HTTPHandler(nil),
+			}
+			log.Println("HTTP重定向服务启动在 :80")
+			if err := httpServer.ListenAndServe(); err != nil && err != http.ErrServerClosed {
+				log.Printf("HTTP服务错误: %v", err)
+			}
+		}()
+
+		// 启动HTTPS服务
+		go func() {
+			log.Printf("HTTPS服务器启动在 :443，域名：%s", cfg.HTTPS.Domain)
+			if err := srv.ListenAndServeTLS("", ""); err != nil && err != http.ErrServerClosed {
+				log.Fatalf("HTTPS服务器启动失败: %v", err)
+			}
+		}()
+
+		waitForShutdown(srv)
+	} else {
+		// 使用证书文件
+		srv := &http.Server{
+			Addr:           fmt.Sprintf(":%d", cfg.Server.Port),
+			Handler:        handler,
+			ReadTimeout:    cfg.Server.ReadTimeout,
+			WriteTimeout:   cfg.Server.WriteTimeout,
+			IdleTimeout:    cfg.Server.IdleTimeout,
+			MaxHeaderBytes: cfg.Server.MaxHeaderBytes,
+		}
+
+		go func() {
+			log.Printf("HTTPS服务器启动在 :%d", cfg.Server.Port)
+			if err := srv.ListenAndServeTLS(cfg.HTTPS.CertFile, cfg.HTTPS.KeyFile); err != nil && err != http.ErrServerClosed {
+				log.Fatalf("服务器启动失败: %v", err)
+			}
+		}()
+
+		waitForShutdown(srv)
+	}
+}
+
+// waitForShutdown 等待关闭信号
+func waitForShutdown(srv *http.Server) {
 	quit := make(chan os.Signal, 1)
 	signal.Notify(quit, syscall.SIGINT, syscall.SIGTERM)
 	<-quit
 	log.Println("正在关闭服务器...")
 
-	// 设置关闭超时
 	ctx, cancel := context.WithTimeout(context.Background(), 30*time.Second)
 	defer cancel()
 
@@ -110,50 +199,39 @@ func healthCheck(w http.ResponseWriter, r *http.Request) {
 	w.Write([]byte(`{"status":"healthy","timestamp":"` + time.Now().Format(time.RFC3339) + `"}`))
 }
 
-// setupLogger 设置日志（纯手工按天分割）
+// setupLogger 设置日志（按天分割）
 func setupLogger(cfg config.LogConfig) error {
-	// 创建日志目录
 	if err := os.MkdirAll("./logs", 0755); err != nil {
 		return fmt.Errorf("创建日志目录失败: %v", err)
 	}
 
-	// 如果配置输出到 stdout
 	if cfg.Output == "stdout" {
 		log.SetOutput(os.Stdout)
 		log.SetFlags(log.Ldate | log.Ltime | log.Lshortfile)
 		return nil
 	}
 
-	// 启动一个 goroutine 每天切换日志文件
 	go func() {
 		for {
-			// 生成当天的日志文件名
 			today := time.Now().Format("2006-01-02")
 			logFile := fmt.Sprintf("./logs/app-%s.log", today)
 
-			// 打开今天的日志文件
 			file, err := os.OpenFile(logFile, os.O_CREATE|os.O_WRONLY|os.O_APPEND, 0666)
 			if err == nil {
-				// 设置日志输出到文件和控制台
 				log.SetOutput(io.MultiWriter(os.Stdout, file))
 				log.Printf("日志文件切换到: %s", logFile)
 			}
 
-			// 计算到明天零点的时间
 			now := time.Now()
 			next := time.Date(now.Year(), now.Month(), now.Day()+1, 0, 0, 0, 0, now.Location())
 			time.Sleep(next.Sub(now))
 
-			// 关闭今天的文件
 			if file != nil {
 				file.Close()
 			}
 		}
 	}()
 
-	// 初始设置日志格式
 	log.SetFlags(log.Ldate | log.Ltime | log.Lshortfile)
-
-	// 让主程序继续执行，不阻塞
 	return nil
 }

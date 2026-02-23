@@ -1,6 +1,9 @@
 package middleware
 
 import (
+	"bytes"
+	"encoding/json"
+	"io"
 	"log"
 	"net/http"
 	"runtime/debug"
@@ -22,38 +25,104 @@ func Recovery(next http.Handler) http.Handler {
 	})
 }
 
-// Logger 日志中间件
+// responseCapture 同时捕获状态码和响应体
+type responseCapture struct {
+	http.ResponseWriter
+	statusCode int
+	body       *bytes.Buffer
+}
+
+func (rc *responseCapture) WriteHeader(code int) {
+	rc.statusCode = code
+	rc.ResponseWriter.WriteHeader(code)
+}
+
+func (rc *responseCapture) Write(b []byte) (int, error) {
+	// 同时写入原始ResponseWriter和缓冲区
+	rc.body.Write(b)
+	return rc.ResponseWriter.Write(b)
+}
+
+// Logger 日志中间件（记录请求数据）
 func Logger(next http.Handler) http.Handler {
 	return http.HandlerFunc(func(w http.ResponseWriter, r *http.Request) {
 		start := time.Now()
 
-		// 包装 ResponseWriter 以获取状态码
-		wrapped := &responseWriter{ResponseWriter: w, statusCode: http.StatusOK}
+		// ----- 记录请求数据（但不影响后续处理）-----
+		var requestBody []byte
+		var requestBodyStr string
 
-		next.ServeHTTP(wrapped, r)
+		// 读取并记录请求体（仅对POST/PUT/PATCH请求）
+		if r.Method == http.MethodPost || r.Method == http.MethodPut || r.Method == http.MethodPatch {
+			if r.Body != nil {
+				// 读取请求体
+				requestBody, _ = io.ReadAll(r.Body)
+				// 重新构造Body，供后续处理器使用
+				r.Body = io.NopCloser(bytes.NewBuffer(requestBody))
 
-		// 记录请求信息
+				// 限制日志中显示的body长度
+				requestBodyStr = string(requestBody)
+				if len(requestBodyStr) > 500 {
+					requestBodyStr = requestBodyStr[:500] + "...(截断)"
+				}
+			}
+		}
+
+		// 创建响应捕获器
+		capture := &responseCapture{
+			ResponseWriter: w,
+			statusCode:     http.StatusOK,
+			body:           &bytes.Buffer{},
+		}
+
+		// 处理请求
+		next.ServeHTTP(capture, r)
+
+		// ----- 记录响应数据 -----
+		var responseBodyStr string
+		if capture.body.Len() > 0 {
+			responseBodyStr = capture.body.String()
+			if len(responseBodyStr) > 500 {
+				responseBodyStr = responseBodyStr[:500] + "...(截断)"
+			}
+		}
+
+		// 计算耗时
 		duration := time.Since(start)
+
+		// ----- 记录请求数据 -----
 		log.Printf("[%s] %s %s %d %v %s",
 			r.Method,
 			r.URL.Path,
 			r.RemoteAddr,
-			wrapped.statusCode,
+			capture.statusCode,
 			duration,
 			r.UserAgent(),
 		)
+
+		// ----- 第二行：详细数据（如果有POST数据或错误）-----
+		// 只在以下情况打印详细数据：
+		// 1. 有POST/PUT/PATCH数据
+		// 2. 响应状态码不是200
+		// 3. 是登录接口（方便调试）
+		if requestBodyStr != "" || capture.statusCode != http.StatusOK || r.URL.Path == "/auth/login" {
+			log.Printf("  └─ 请求数据: %s", requestBodyStr)
+
+			if responseBodyStr != "" {
+				// 尝试格式化JSON响应
+				var prettyJSON bytes.Buffer
+				if json.Valid([]byte(responseBodyStr)) {
+					json.Indent(&prettyJSON, []byte(responseBodyStr), "", "  ")
+					// 把多行JSON压缩成一行显示
+					oneLineJSON := bytes.ReplaceAll(prettyJSON.Bytes(), []byte("\n"), []byte(" "))
+					oneLineJSON = bytes.ReplaceAll(oneLineJSON, []byte("  "), []byte(" "))
+					log.Printf("  └─ 响应数据: %s", string(oneLineJSON))
+				} else {
+					log.Printf("  └─ 响应数据: %s", responseBodyStr)
+				}
+			}
+		}
 	})
-}
-
-// responseWriter 包装 http.ResponseWriter 以捕获状态码
-type responseWriter struct {
-	http.ResponseWriter
-	statusCode int
-}
-
-func (rw *responseWriter) WriteHeader(code int) {
-	rw.statusCode = code
-	rw.ResponseWriter.WriteHeader(code)
 }
 
 // RateLimiter 限流中间件
@@ -73,7 +142,7 @@ func RateLimiter(limiter *rate.Limiter) func(http.Handler) http.Handler {
 func Cors(next http.Handler) http.Handler {
 	return http.HandlerFunc(func(w http.ResponseWriter, r *http.Request) {
 		w.Header().Set("Access-Control-Allow-Origin", "*")
-		w.Header().Set("Access-Control-Allow-Methods", "POST, GET, OPTIONS")
+		w.Header().Set("Access-Control-Allow-Methods", "POST, GET, OPTIONS, PUT, DELETE")
 		w.Header().Set("Access-Control-Allow-Headers", "Content-Type, Authorization")
 
 		if r.Method == "OPTIONS" {

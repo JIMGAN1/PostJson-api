@@ -28,6 +28,40 @@ server:
   # 1MB = 1048576 字节，通常足够
   max_header_bytes: 1048576  # 1MB
 
+# ---------- HTTPS配置 ----------
+https:
+  # 是否启用HTTPS
+  enabled: false  # 本地开发先用false，用HTTP测试
+  
+  # 证书配置（当enabled为true时需要）
+  # 本地开发用mkcert生成的证书
+  cert_file: "./certs/localhost.pem"
+  key_file: "./certs/localhost-key.pem"
+  
+  # 如果使用Let's Encrypt自动证书（需要公网域名）
+  # domain: "your-domain.com"
+  # email: "admin@your-domain.com"
+  # auto_cert: false  # 本地开发不用自动证书
+
+# ---------- JWT认证配置 ----------
+auth:
+  # 是否启用JWT认证
+  # true: 所有/api/请求需要登录
+  # false: 无需认证（兼容旧版本）
+  enabled: true
+  
+  # JWT密钥（生产环境请使用复杂字符串）
+  jwt_secret: "your-256-bit-secret-key-change-in-production"
+  
+  # Token过期时间
+  token_expiry: 2h
+  
+  # Token在请求头中的名称
+  token_header: "Authorization"
+  
+  # Token前缀
+  token_prefix: "Bearer "
+
 # ---------- 请求处理配置 ----------
 request:
   # 请求体最大大小（字节）

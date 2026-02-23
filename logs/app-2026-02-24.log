@@ -1,0 +1,1024 @@
+2026/02/24 00:03:26 postjson.go:217: 日志文件切换到: ./logs/app-2026-02-24.log
+2026/02/24 00:03:55 user.go:96: [密码验证成功] 用户验证通过
+2026/02/24 00:03:55 middleware.go:94: [POST] /auth/login 127.0.0.1:6694 200 49.1537ms Apifox/1.0.0 (https://apifox.com)
+2026/02/24 00:03:55 middleware.go:109:   └─ 请求数据: {
+    "username":"admin",
+    "password":"admin123"
+}
+2026/02/24 00:03:55 middleware.go:119:   └─ 响应数据: {  "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoxLCJ1c2VybmFtZSI6ImFkbWluIiwicm9sZSI6ImFkbWluIiwiaXNzIjoiUG9zdEpzb24iLCJleHAiOi0yNzc3Mzc4NjIwLCJpYXQiOjE3NzE4NjI2MzV9.ZHBXKbo8-ZW_-jayx_cfmXI5AcXGso2RSp0zgdjFOlE",  "user": {   "id": 1,   "username": "admin",   "email": "admin@example.com",   "role": "admin",   "created_at": "2026-02-24T00:03:26.5606768+08:00"  } } 
+2026/02/24 00:04:09 user.go:96: [密码验证成功] 用户验证通过
+2026/02/24 00:04:09 middleware.go:94: [POST] /auth/login 127.0.0.1:6694 200 60.7501ms Apifox/1.0.0 (https://apifox.com)
+2026/02/24 00:04:09 middleware.go:109:   └─ 请求数据: {
+    "username":"admin",
+    "password":"admin123"
+}
+2026/02/24 00:04:09 middleware.go:119:   └─ 响应数据: {  "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoxLCJ1c2VybmFtZSI6ImFkbWluIiwicm9sZSI6ImFkbWluIiwiaXNzIjoiUG9zdEpzb24iLCJleHAiOi0yNzc3Mzc4NjA3LCJpYXQiOjE3NzE4NjI2NDl9.hnNHAQljcnSedNtGQbFt7A2zL1zWoaEbmXBf-MKPhFE",  "user": {   "id": 1,   "username": "admin",   "email": "admin@example.com",   "role": "admin",   "created_at": "2026-02-24T00:03:26.5606768+08:00"  } } 
+2026/02/24 00:15:00 middleware.go:94: [POST] /debug/auth 127.0.0.1:6694 200 0s Apifox/1.0.0 (https://apifox.com)
+2026/02/24 00:15:00 middleware.go:109:   └─ 请求数据: {
+    "username":"admin",
+    "password":"admin123"
+}
+2026/02/24 00:15:00 middleware.go:119:   └─ 响应数据: {  "mock_users_count": 2,  "users": [   {    "email": "admin@example.com",    "hash_valid": true,    "password_hash": "$2a$10$RWxx/wUjnWokXMfHzZupRusrhhnlgXZ8rsoEz1RzixQcRhhee/1mi",    "password_hash_prefix": "$2a$10$RWxx/wUjnWokX...",    "role": "admin",    "username": "admin"   },   {    "email": "user@example.com",    "hash_valid": true,    "password_hash": "$2a$10$N9qo8uLOickgx2ZMRZoMy.MrV7GJ3qFk5Q5J5g5J5g5J5g5J5g5J",    "password_hash_prefix": "$2a$10$N9qo8uLOickgx...",    "role": "user",    "username": "user"   }  ] } 
+2026/02/24 00:18:17 user.go:96: [密码验证成功] 用户验证通过
+2026/02/24 00:18:17 middleware.go:94: [POST] /auth/login 127.0.0.1:6694 200 37.7138ms Apifox/1.0.0 (https://apifox.com)
+2026/02/24 00:18:17 middleware.go:109:   └─ 请求数据: {
+    "username":"admin",
+    "password":"admin123"
+}
+2026/02/24 00:18:17 middleware.go:119:   └─ 响应数据: {  "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoxLCJ1c2VybmFtZSI6ImFkbWluIiwicm9sZSI6ImFkbWluIiwiaXNzIjoiUG9zdEpzb24iLCJleHAiOi0yNzc3Mzc3NzU5LCJpYXQiOjE3NzE4NjM0OTd9.kPn5DqBuublf-rXYObcPfkZj0lNXS6N-TO4VzniyOaM",  "user": {   "id": 1,   "username": "admin",   "email": "admin@example.com",   "role": "admin",   "created_at": "2026-02-24T00:03:26.5606768+08:00"  } } 
+2026/02/24 00:18:20 user.go:96: [密码验证成功] 用户验证通过
+2026/02/24 00:18:20 middleware.go:94: [POST] /auth/login 127.0.0.1:6694 200 38.4351ms Apifox/1.0.0 (https://apifox.com)
+2026/02/24 00:18:20 middleware.go:109:   └─ 请求数据: {
+    "username":"admin",
+    "password":"admin123"
+}
+2026/02/24 00:18:20 middleware.go:119:   └─ 响应数据: {  "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoxLCJ1c2VybmFtZSI6ImFkbWluIiwicm9sZSI6ImFkbWluIiwiaXNzIjoiUG9zdEpzb24iLCJleHAiOi0yNzc3Mzc3NzU1LCJpYXQiOjE3NzE4NjM1MDB9.FDowdPRQoY4ad1Gxkg6ncJn0_KIkTRrxemE4EEUwkEo",  "user": {   "id": 1,   "username": "admin",   "email": "admin@example.com",   "role": "admin",   "created_at": "2026-02-24T00:03:26.5606768+08:00"  } } 
+2026/02/24 00:18:22 user.go:96: [密码验证成功] 用户验证通过
+2026/02/24 00:18:22 middleware.go:94: [POST] /auth/login 127.0.0.1:6694 200 37.7217ms Apifox/1.0.0 (https://apifox.com)
+2026/02/24 00:18:22 middleware.go:109:   └─ 请求数据: {
+    "username":"admin",
+    "password":"admin123"
+}
+2026/02/24 00:18:22 middleware.go:119:   └─ 响应数据: {  "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoxLCJ1c2VybmFtZSI6ImFkbWluIiwicm9sZSI6ImFkbWluIiwiaXNzIjoiUG9zdEpzb24iLCJleHAiOi0yNzc3Mzc3NzUzLCJpYXQiOjE3NzE4NjM1MDJ9.BEMyS9c2nw_Tg02e3GTaKN7SRYPKdrZwa62TH3ORs28",  "user": {   "id": 1,   "username": "admin",   "email": "admin@example.com",   "role": "admin",   "created_at": "2026-02-24T00:03:26.5606768+08:00"  } } 
+2026/02/24 00:18:25 user.go:96: [密码验证成功] 用户验证通过
+2026/02/24 00:18:25 middleware.go:94: [POST] /auth/login 127.0.0.1:6694 200 37.0631ms Apifox/1.0.0 (https://apifox.com)
+2026/02/24 00:18:25 middleware.go:109:   └─ 请求数据: {
+    "username":"admin",
+    "password":"admin123"
+}
+2026/02/24 00:18:25 middleware.go:119:   └─ 响应数据: {  "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoxLCJ1c2VybmFtZSI6ImFkbWluIiwicm9sZSI6ImFkbWluIiwiaXNzIjoiUG9zdEpzb24iLCJleHAiOi0yNzc3Mzc3NzUwLCJpYXQiOjE3NzE4NjM1MDV9.sgfTalgg7NS-E4W6rKfkG6RMLrqoQ52Sd5dYzbttPB0",  "user": {   "id": 1,   "username": "admin",   "email": "admin@example.com",   "role": "admin",   "created_at": "2026-02-24T00:03:26.5606768+08:00"  } } 
+2026/02/24 00:18:34 user.go:96: [密码验证成功] 用户验证通过
+2026/02/24 00:18:34 middleware.go:94: [POST] /auth/login 127.0.0.1:6694 200 58.3471ms Apifox/1.0.0 (https://apifox.com)
+2026/02/24 00:18:34 middleware.go:109:   └─ 请求数据: {
+    "username":"admin",
+    "password":"admin123"
+}
+2026/02/24 00:18:34 middleware.go:119:   └─ 响应数据: {  "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoxLCJ1c2VybmFtZSI6ImFkbWluIiwicm9sZSI6ImFkbWluIiwiaXNzIjoiUG9zdEpzb24iLCJleHAiOi0yNzc3Mzc3NzQxLCJpYXQiOjE3NzE4NjM1MTR9.agsNq7dzlJfQ7SzGY-CiuSu1BO12W-bpXH78cP8oLmY",  "user": {   "id": 1,   "username": "admin",   "email": "admin@example.com",   "role": "admin",   "created_at": "2026-02-24T00:03:26.5606768+08:00"  } } 
+2026/02/24 00:21:57 postjson.go:217: 日志文件切换到: ./logs/app-2026-02-24.log
+2026/02/24 00:21:57 postjson.go:99: 服务器启动失败: listen tcp :8443: bind: Only one usage of each socket address (protocol/network address/port) is normally permitted.
+2026/02/24 00:22:07 postjson.go:178: 正在关闭服务器...
+2026/02/24 00:22:07 postjson.go:187: 服务器已关闭
+2026/02/24 00:22:11 postjson.go:217: 日志文件切换到: ./logs/app-2026-02-24.log
+2026/02/24 00:22:16 middleware.go:94: [POST] /auth/login 127.0.0.1:3985 200 40.7421ms Apifox/1.0.0 (https://apifox.com)
+2026/02/24 00:22:16 middleware.go:109:   └─ 请求数据: {
+    "username":"admin",
+    "password":"admin123"
+}
+2026/02/24 00:22:16 middleware.go:119:   └─ 响应数据: {  "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoxLCJ1c2VybmFtZSI6ImFkbWluIiwicm9sZSI6ImFkbWluIiwiaXNzIjoiUG9zdEpzb24iLCJleHAiOi0yNzc3Mzc3NTIwLCJpYXQiOjE3NzE4NjM3MzZ9.tqC6VrSQvK-QiRzdVtSubK9hjxCv3uKDvHvWyCDVQ3g",  "user": {   "id": 1,   "username": "admin",   "email": "admin@example.com",   "role": "admin",   "created_at": "2026-02-24T00:22:11.8157977+08:00"  } } 
+2026/02/24 00:24:47 middleware.go:94: [POST] /api-json 127.0.0.1:3985 404 0s Apifox/1.0.0 (https://apifox.com)
+2026/02/24 00:24:47 middleware.go:109:   └─ 请求数据: { 
+    "name":  "JIMG"
+}
+2026/02/24 00:24:47 middleware.go:121:   └─ 响应数据: 404 page not found
+2026/02/24 00:24:48 middleware.go:94: [POST] /api-json 127.0.0.1:3985 404 0s Apifox/1.0.0 (https://apifox.com)
+2026/02/24 00:24:48 middleware.go:109:   └─ 请求数据: { 
+    "name":  "JIMG"
+}
+2026/02/24 00:24:48 middleware.go:121:   └─ 响应数据: 404 page not found
+2026/02/24 00:25:40 auth_middleware.go:32: [认证失败] POST /api/api-json - 无Token
+2026/02/24 00:25:40 middleware.go:94: [POST] /api/api-json 127.0.0.1:3985 401 0s Apifox/1.0.0 (https://apifox.com)
+2026/02/24 00:25:40 middleware.go:109:   └─ 请求数据: { 
+    "name":  "JIMG"
+}
+2026/02/24 00:25:40 middleware.go:121:   └─ 响应数据: 未提供认证令牌
+2026/02/24 00:31:14 auth_middleware.go:32: [认证失败] POST /api/api-json - 无Token
+2026/02/24 00:31:14 middleware.go:94: [POST] /api/api-json 127.0.0.1:3985 401 0s Apifox/1.0.0 (https://apifox.com)
+2026/02/24 00:31:14 middleware.go:109:   └─ 请求数据: {
+    "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoxLCJ1c2VybmFtZSI6ImFkbWluIiwicm9sZSI6ImFkbWluIiwiaXNzIjoiUG9zdEpzb24iLCJleHAiOi0yNzc3Mzc3NTIwLCJpYXQiOjE3NzE4NjM3MzZ9.tqC6VrSQvK-QiRzdVtSubK9hjxCv3uKDvHvWyCDVQ3g",
+    "name":  "JIMG"
+}
+2026/02/24 00:31:14 middleware.go:121:   └─ 响应数据: 未提供认证令牌
+2026/02/24 00:31:16 auth_middleware.go:32: [认证失败] POST /api/api-json - 无Token
+2026/02/24 00:31:16 middleware.go:94: [POST] /api/api-json 127.0.0.1:3985 401 0s Apifox/1.0.0 (https://apifox.com)
+2026/02/24 00:31:16 middleware.go:109:   └─ 请求数据: {
+    "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoxLCJ1c2VybmFtZSI6ImFkbWluIiwicm9sZSI6ImFkbWluIiwiaXNzIjoiUG9zdEpzb24iLCJleHAiOi0yNzc3Mzc3NTIwLCJpYXQiOjE3NzE4NjM3MzZ9.tqC6VrSQvK-QiRzdVtSubK9hjxCv3uKDvHvWyCDVQ3g",
+    "name":  "JIMG"
+}
+2026/02/24 00:31:16 middleware.go:121:   └─ 响应数据: 未提供认证令牌
+2026/02/24 00:39:16 auth_middleware.go:47: [认证失败] POST /api/api-json - Token无效: token is malformed: token contains an invalid number of segments
+2026/02/24 00:39:16 middleware.go:94: [POST] /api/api-json 127.0.0.1:3985 401 0s Apifox/1.0.0 (https://apifox.com)
+2026/02/24 00:39:16 middleware.go:109:   └─ 请求数据: {
+    "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoxLCJ1c2VybmFtZSI6ImFkbWluIiwicm9sZSI6ImFkbWluIiwiaXNzIjoiUG9zdEpzb24iLCJleHAiOi0yNzc3Mzc3NTIwLCJpYXQiOjE3NzE4NjM3MzZ9.tqC6VrSQvK-QiRzdVtSubK9hjxCv3uKDvHvWyCDVQ3g",
+    "name":  "JIMG"
+}
+2026/02/24 00:39:16 middleware.go:121:   └─ 响应数据: 无效的认证令牌
+2026/02/24 00:39:22 middleware.go:94: [POST] /auth/login 127.0.0.1:3985 200 51.5503ms Apifox/1.0.0 (https://apifox.com)
+2026/02/24 00:39:22 middleware.go:109:   └─ 请求数据: {
+    "username":"admin",
+    "password":"admin123"
+}
+2026/02/24 00:39:22 middleware.go:119:   └─ 响应数据: {  "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoxLCJ1c2VybmFtZSI6ImFkbWluIiwicm9sZSI6ImFkbWluIiwiaXNzIjoiUG9zdEpzb24iLCJleHAiOi0yNzc3Mzc2NDkzLCJpYXQiOjE3NzE4NjQ3NjJ9.Ts4cTBP1oAhzMbux6c6w9ee2GCF_wGyzPTt21vHC0e4",  "user": {   "id": 1,   "username": "admin",   "email": "admin@example.com",   "role": "admin",   "created_at": "2026-02-24T00:22:11.8157977+08:00"  } } 
+2026/02/24 00:39:32 auth_middleware.go:47: [认证失败] POST /api/api-json - Token无效: token is malformed: token contains an invalid number of segments
+2026/02/24 00:39:32 middleware.go:94: [POST] /api/api-json 127.0.0.1:3985 401 8.9991ms Apifox/1.0.0 (https://apifox.com)
+2026/02/24 00:39:32 middleware.go:109:   └─ 请求数据: {
+    "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoxLCJ1c2VybmFtZSI6ImFkbWluIiwicm9sZSI6ImFkbWluIiwiaXNzIjoiUG9zdEpzb24iLCJleHAiOi0yNzc3Mzc3NTIwLCJpYXQiOjE3NzE4NjM3MzZ9.tqC6VrSQvK-QiRzdVtSubK9hjxCv3uKDvHvWyCDVQ3g",
+    "name":  "JIMG"
+}
+2026/02/24 00:39:32 middleware.go:121:   └─ 响应数据: 无效的认证令牌
+2026/02/24 00:41:06 auth_middleware.go:47: [认证失败] POST /api/api-json - Token无效: token has invalid claims: token is expired
+2026/02/24 00:41:06 middleware.go:94: [POST] /api/api-json 127.0.0.1:3985 401 0s Apifox/1.0.0 (https://apifox.com)
+2026/02/24 00:41:06 middleware.go:109:   └─ 请求数据: {
+    "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoxLCJ1c2VybmFtZSI6ImFkbWluIiwicm9sZSI6ImFkbWluIiwiaXNzIjoiUG9zdEpzb24iLCJleHAiOi0yNzc3Mzc3NTIwLCJpYXQiOjE3NzE4NjM3MzZ9.tqC6VrSQvK-QiRzdVtSubK9hjxCv3uKDvHvWyCDVQ3g",
+    "name":  "JIMG"
+}
+2026/02/24 00:41:06 middleware.go:121:   └─ 响应数据: 无效的认证令牌
+2026/02/24 00:43:50 auth_middleware.go:47: [认证失败] POST /api/api-json - Token无效: token has invalid claims: token is expired
+2026/02/24 00:43:50 middleware.go:94: [POST] /api/api-json 127.0.0.1:3985 401 0s Apifox/1.0.0 (https://apifox.com)
+2026/02/24 00:43:50 middleware.go:109:   └─ 请求数据: {
+    "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoxLCJ1c2VybmFtZSI6ImFkbWluIiwicm9sZSI6ImFkbWluIiwiaXNzIjoiUG9zdEpzb24iLCJleHAiOi0yNzc3Mzc3NTIwLCJpYXQiOjE3NzE4NjM3MzZ9.tqC6VrSQvK-QiRzdVtSubK9hjxCv3uKDvHvWyCDVQ3g",
+    "name":  "JIMG"
+}
+2026/02/24 00:43:50 middleware.go:121:   └─ 响应数据: 无效的认证令牌
+2026/02/24 00:44:01 auth_middleware.go:47: [认证失败] POST /api/api-json - Token无效: token has invalid claims: token is expired
+2026/02/24 00:44:01 middleware.go:94: [POST] /api/api-json 127.0.0.1:3985 401 0s Apifox/1.0.0 (https://apifox.com)
+2026/02/24 00:44:01 middleware.go:109:   └─ 请求数据: {
+    "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoxLCJ1c2VybmFtZSI6ImFkbWluIiwicm9sZSI6ImFkbWluIiwiaXNzIjoiUG9zdEpzb24iLCJleHAiOi0yNzc3Mzc3NTIwLCJpYXQiOjE3NzE4NjM3MzZ9.tqC6VrSQvK-QiRzdVtSubK9hjxCv3uKDvHvWyCDVQ3g",
+    "name":  "JIMG"
+}
+2026/02/24 00:44:01 middleware.go:121:   └─ 响应数据: 无效的认证令牌
+2026/02/24 00:44:06 auth_middleware.go:47: [认证失败] POST /api/api-json - Token无效: token has invalid claims: token is expired
+2026/02/24 00:44:06 middleware.go:94: [POST] /api/api-json 127.0.0.1:3985 401 0s Apifox/1.0.0 (https://apifox.com)
+2026/02/24 00:44:06 middleware.go:109:   └─ 请求数据: {
+    "name":  "JIMG"
+}
+2026/02/24 00:44:06 middleware.go:121:   └─ 响应数据: 无效的认证令牌
+2026/02/24 00:44:07 auth_middleware.go:47: [认证失败] POST /api/api-json - Token无效: token has invalid claims: token is expired
+2026/02/24 00:44:07 middleware.go:94: [POST] /api/api-json 127.0.0.1:3985 401 0s Apifox/1.0.0 (https://apifox.com)
+2026/02/24 00:44:07 middleware.go:109:   └─ 请求数据: {
+    "name":  "JIMG"
+}
+2026/02/24 00:44:07 middleware.go:121:   └─ 响应数据: 无效的认证令牌
+2026/02/24 00:44:44 middleware.go:94: [POST] /auth/login 127.0.0.1:3985 200 37.5797ms Apifox/1.0.0 (https://apifox.com)
+2026/02/24 00:44:44 middleware.go:109:   └─ 请求数据: {
+    "username":"admin",
+    "password":"admin123"
+}
+2026/02/24 00:44:44 middleware.go:119:   └─ 响应数据: {  "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoxLCJ1c2VybmFtZSI6ImFkbWluIiwicm9sZSI6ImFkbWluIiwiaXNzIjoiUG9zdEpzb24iLCJleHAiOi0yNzc3Mzc2MTcxLCJpYXQiOjE3NzE4NjUwODR9.CsuYvAzPL5LrH-YWZ1pJnh-bpDUuXOnTx3X6KsbRCgA",  "user": {   "id": 1,   "username": "admin",   "email": "admin@example.com",   "role": "admin",   "created_at": "2026-02-24T00:22:11.8157977+08:00"  } } 
+2026/02/24 00:45:02 auth_middleware.go:47: [认证失败] POST /api/api-json - Token无效: token has invalid claims: token is expired
+2026/02/24 00:45:02 middleware.go:94: [POST] /api/api-json 127.0.0.1:3985 401 0s Apifox/1.0.0 (https://apifox.com)
+2026/02/24 00:45:02 middleware.go:109:   └─ 请求数据: {
+    "name":  "JIMG"
+}
+2026/02/24 00:45:02 middleware.go:121:   └─ 响应数据: 无效的认证令牌
+2026/02/24 00:45:14 auth_middleware.go:47: [认证失败] POST /api/json - Token无效: token has invalid claims: token is expired
+2026/02/24 00:45:14 middleware.go:94: [POST] /api/json 127.0.0.1:3985 401 0s Apifox/1.0.0 (https://apifox.com)
+2026/02/24 00:45:14 middleware.go:109:   └─ 请求数据: {
+    "name":  "JIMG"
+}
+2026/02/24 00:45:14 middleware.go:121:   └─ 响应数据: 无效的认证令牌
+2026/02/24 00:45:24 postjson.go:217: 日志文件切换到: ./logs/app-2026-02-24.log
+2026/02/24 00:45:30 auth_middleware.go:47: [认证失败] POST /api/json - Token无效: token has invalid claims: token is expired
+2026/02/24 00:45:30 middleware.go:94: [POST] /api/json 127.0.0.1:13080 401 502.4µs Apifox/1.0.0 (https://apifox.com)
+2026/02/24 00:45:30 middleware.go:109:   └─ 请求数据: {
+    "name":  "JIMG"
+}
+2026/02/24 00:45:30 middleware.go:121:   └─ 响应数据: 无效的认证令牌
+2026/02/24 00:46:47 middleware.go:94: [POST] /auth/login 127.0.0.1:13080 200 37.6323ms Apifox/1.0.0 (https://apifox.com)
+2026/02/24 00:46:47 middleware.go:109:   └─ 请求数据: {
+    "username":"admin",
+    "password":"admin123"
+}
+2026/02/24 00:46:47 middleware.go:119:   └─ 响应数据: {  "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoxLCJ1c2VybmFtZSI6ImFkbWluIiwicm9sZSI6ImFkbWluIiwiaXNzIjoiUG9zdEpzb24iLCJleHAiOi0yNzc3Mzc2MDQ5LCJpYXQiOjE3NzE4NjUyMDd9.3RcQRuC2GoYzoJ-HVCFENzrgUsyPJukmnmR54pTsi3M",  "user": {   "id": 1,   "username": "admin",   "email": "admin@example.com",   "role": "admin",   "created_at": "2026-02-24T00:45:24.7471891+08:00"  } } 
+2026/02/24 00:46:49 middleware.go:94: [POST] /auth/login 127.0.0.1:13080 200 37.9616ms Apifox/1.0.0 (https://apifox.com)
+2026/02/24 00:46:49 middleware.go:109:   └─ 请求数据: {
+    "username":"admin",
+    "password":"admin123"
+}
+2026/02/24 00:46:49 middleware.go:119:   └─ 响应数据: {  "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoxLCJ1c2VybmFtZSI6ImFkbWluIiwicm9sZSI6ImFkbWluIiwiaXNzIjoiUG9zdEpzb24iLCJleHAiOi0yNzc3Mzc2MDQ2LCJpYXQiOjE3NzE4NjUyMDl9.pDUHVrxArnTsU0zSUjwdXZ8fW1X6oHGSGe1oD24eQcY",  "user": {   "id": 1,   "username": "admin",   "email": "admin@example.com",   "role": "admin",   "created_at": "2026-02-24T00:45:24.7471891+08:00"  } } 
+2026/02/24 00:47:15 auth_middleware.go:47: [认证失败] POST /api/json - Token无效: token has invalid claims: token is expired
+2026/02/24 00:47:15 middleware.go:94: [POST] /api/json 127.0.0.1:13080 401 0s Apifox/1.0.0 (https://apifox.com)
+2026/02/24 00:47:15 middleware.go:109:   └─ 请求数据: {
+    "name":  "JIMG"
+}
+2026/02/24 00:47:15 middleware.go:121:   └─ 响应数据: 无效的认证令牌
+2026/02/24 00:47:30 auth_middleware.go:47: [认证失败] POST /api/json - Token无效: token has invalid claims: token is expired
+2026/02/24 00:47:30 middleware.go:94: [POST] /api/json 127.0.0.1:13080 401 0s Apifox/1.0.0 (https://apifox.com)
+2026/02/24 00:47:30 middleware.go:109:   └─ 请求数据: {
+    "name":  "JIMG"
+}
+2026/02/24 00:47:30 middleware.go:121:   └─ 响应数据: 无效的认证令牌
+2026/02/24 00:48:35 auth_middleware.go:47: [认证失败] POST /api/json - Token无效: token has invalid claims: token is expired
+2026/02/24 00:48:35 middleware.go:94: [POST] /api/json 127.0.0.1:13080 401 0s Apifox/1.0.0 (https://apifox.com)
+2026/02/24 00:48:35 middleware.go:109:   └─ 请求数据: {"name":"测试","age":20,"email":"test@test.com"}
+2026/02/24 00:48:35 middleware.go:121:   └─ 响应数据: 无效的认证令牌
+2026/02/24 00:49:34 middleware.go:94: [POST] /auth/login 127.0.0.1:13080 200 49.899ms Apifox/1.0.0 (https://apifox.com)
+2026/02/24 00:49:34 middleware.go:109:   └─ 请求数据: {
+    "username":"admin",
+    "password":"admin123"
+}
+2026/02/24 00:49:34 middleware.go:119:   └─ 响应数据: {  "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoxLCJ1c2VybmFtZSI6ImFkbWluIiwicm9sZSI6ImFkbWluIiwiaXNzIjoiUG9zdEpzb24iLCJleHAiOi0yNzc3Mzc1ODgyLCJpYXQiOjE3NzE4NjUzNzR9.8byP2FNq2yqAyFaWFiUOj1rBDamuQ_kxiniN22hHaHk",  "user": {   "id": 1,   "username": "admin",   "email": "admin@example.com",   "role": "admin",   "created_at": "2026-02-24T00:45:24.7471891+08:00"  } } 
+2026/02/24 00:50:17 auth_middleware.go:47: [认证失败] POST /api/json - Token无效: token has invalid claims: token is expired
+2026/02/24 00:50:17 middleware.go:94: [POST] /api/json 127.0.0.1:13080 401 0s Apifox/1.0.0 (https://apifox.com)
+2026/02/24 00:50:17 middleware.go:109:   └─ 请求数据: {"name":"测试","age":20,"email":"test@test.com"}
+2026/02/24 00:50:17 middleware.go:121:   └─ 响应数据: 无效的认证令牌
+2026/02/24 00:50:37 auth_middleware.go:47: [认证失败] POST /api/json - Token无效: token has invalid claims: token is expired
+2026/02/24 00:50:37 middleware.go:94: [POST] /api/json 127.0.0.1:13080 401 0s Apifox/1.0.0 (https://apifox.com)
+2026/02/24 00:50:37 middleware.go:109:   └─ 请求数据: {"name":"测试","age":20,"email":"test@test.com"}
+2026/02/24 00:50:37 middleware.go:121:   └─ 响应数据: 无效的认证令牌
+2026/02/24 00:50:39 auth_middleware.go:47: [认证失败] POST /api/json - Token无效: token has invalid claims: token is expired
+2026/02/24 00:50:39 middleware.go:94: [POST] /api/json 127.0.0.1:13080 401 0s Apifox/1.0.0 (https://apifox.com)
+2026/02/24 00:50:39 middleware.go:109:   └─ 请求数据: {"name":"测试","age":20,"email":"test@test.com"}
+2026/02/24 00:50:39 middleware.go:121:   └─ 响应数据: 无效的认证令牌
+2026/02/24 00:53:02 auth_middleware.go:47: [认证失败] POST /api/json - Token无效: token has invalid claims: token is expired
+2026/02/24 00:53:02 middleware.go:94: [POST] /api/json 127.0.0.1:13080 401 0s Apifox/1.0.0 (https://apifox.com)
+2026/02/24 00:53:02 middleware.go:109:   └─ 请求数据: {"name":"测试","age":20,"email":"test@test.com"}
+2026/02/24 00:53:02 middleware.go:121:   └─ 响应数据: 无效的认证令牌
+2026/02/24 00:54:25 postjson.go:217: 日志文件切换到: ./logs/app-2026-02-24.log
+2026/02/24 00:54:31 auth_middleware.go:47: [认证失败] POST /api/json - Token无效: token has invalid claims: token is expired%!s(bool=false)
+2026/02/24 00:54:31 middleware.go:94: [POST] /api/json 127.0.0.1:5974 401 504µs Apifox/1.0.0 (https://apifox.com)
+2026/02/24 00:54:31 middleware.go:109:   └─ 请求数据: {"name":"测试","age":20,"email":"test@test.com"}
+2026/02/24 00:54:31 middleware.go:121:   └─ 响应数据: 无效的认证令牌
+2026/02/24 00:54:42 middleware.go:94: [POST] /auth/login 127.0.0.1:5974 200 38.5356ms Apifox/1.0.0 (https://apifox.com)
+2026/02/24 00:54:42 middleware.go:109:   └─ 请求数据: {
+    "username":"admin",
+    "password":"admin123"
+}
+2026/02/24 00:54:42 middleware.go:119:   └─ 响应数据: {  "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoxLCJ1c2VybmFtZSI6ImFkbWluIiwicm9sZSI6ImFkbWluIiwiaXNzIjoiUG9zdEpzb24iLCJleHAiOi0yNzc3Mzc1NTczLCJpYXQiOjE3NzE4NjU2ODJ9.vckraQnZzmblvDOkJ7nk1DbnsaXCFpiaLZMJItcodMo",  "user": {   "id": 1,   "username": "admin",   "email": "admin@example.com",   "role": "admin",   "created_at": "2026-02-24T00:54:25.2463992+08:00"  } } 
+2026/02/24 00:54:43 middleware.go:94: [POST] /auth/login 127.0.0.1:5974 200 36.8559ms Apifox/1.0.0 (https://apifox.com)
+2026/02/24 00:54:43 middleware.go:109:   └─ 请求数据: {
+    "username":"admin",
+    "password":"admin123"
+}
+2026/02/24 00:54:43 middleware.go:119:   └─ 响应数据: {  "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoxLCJ1c2VybmFtZSI6ImFkbWluIiwicm9sZSI6ImFkbWluIiwiaXNzIjoiUG9zdEpzb24iLCJleHAiOi0yNzc3Mzc1NTczLCJpYXQiOjE3NzE4NjU2ODN9.OmgkE75ie6qgUvvbSiaAnx34CmJ1cv0uFdcdF8LRKag",  "user": {   "id": 1,   "username": "admin",   "email": "admin@example.com",   "role": "admin",   "created_at": "2026-02-24T00:54:25.2463992+08:00"  } } 
+2026/02/24 00:54:43 middleware.go:94: [POST] /auth/login 127.0.0.1:5974 200 36.8938ms Apifox/1.0.0 (https://apifox.com)
+2026/02/24 00:54:43 middleware.go:109:   └─ 请求数据: {
+    "username":"admin",
+    "password":"admin123"
+}
+2026/02/24 00:54:43 middleware.go:119:   └─ 响应数据: {  "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoxLCJ1c2VybmFtZSI6ImFkbWluIiwicm9sZSI6ImFkbWluIiwiaXNzIjoiUG9zdEpzb24iLCJleHAiOi0yNzc3Mzc1NTcyLCJpYXQiOjE3NzE4NjU2ODN9.J3xI4bY4aMpTfoMJMNoHLJDcYxcb_TDjB4M-uHVH3iU",  "user": {   "id": 1,   "username": "admin",   "email": "admin@example.com",   "role": "admin",   "created_at": "2026-02-24T00:54:25.2463992+08:00"  } } 
+2026/02/24 00:54:44 middleware.go:94: [POST] /auth/login 127.0.0.1:5974 200 37.8631ms Apifox/1.0.0 (https://apifox.com)
+2026/02/24 00:54:44 middleware.go:109:   └─ 请求数据: {
+    "username":"admin",
+    "password":"admin123"
+}
+2026/02/24 00:54:44 middleware.go:119:   └─ 响应数据: {  "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoxLCJ1c2VybmFtZSI6ImFkbWluIiwicm9sZSI6ImFkbWluIiwiaXNzIjoiUG9zdEpzb24iLCJleHAiOi0yNzc3Mzc1NTcyLCJpYXQiOjE3NzE4NjU2ODR9.gzYl9l7-flucfBqcsZAKMhIfedxhPoeqgcsQmeQc_x0",  "user": {   "id": 1,   "username": "admin",   "email": "admin@example.com",   "role": "admin",   "created_at": "2026-02-24T00:54:25.2463992+08:00"  } } 
+2026/02/24 00:55:39 auth_middleware.go:47: [认证失败] POST /api/json - Token无效: token has invalid claims: token is expired%!s(bool=false)
+2026/02/24 00:55:39 middleware.go:94: [POST] /api/json 127.0.0.1:5974 401 0s Apifox/1.0.0 (https://apifox.com)
+2026/02/24 00:55:39 middleware.go:109:   └─ 请求数据: {"name":"测试","age":20,"email":"test@test.com"}
+2026/02/24 00:55:39 middleware.go:121:   └─ 响应数据: 无效的认证令牌
+2026/02/24 01:07:12 postjson.go:217: 日志文件切换到: ./logs/app-2026-02-24.log
+2026/02/24 01:07:36 middleware.go:94: [POST] /auth/login 127.0.0.1:2272 200 37.0841ms Apifox/1.0.0 (https://apifox.com)
+2026/02/24 01:07:36 middleware.go:109:   └─ 请求数据: {
+    "username":"admin",
+    "password":"admin123"
+}
+2026/02/24 01:07:36 middleware.go:119:   └─ 响应数据: {  "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoxLCJ1c2VybmFtZSI6ImFkbWluIiwicm9sZSI6ImFkbWluIiwiaXNzIjoiUG9zdEpzb24iLCJleHAiOi0yNzc3Mzc0Nzk5LCJpYXQiOjE3NzE4NjY0NTZ9.eYRhswVT7oTlgjmkoeD3jO9Bev79nVZNOP3cbqILhkk",  "user": {   "id": 1,   "username": "admin",   "email": "admin@example.com",   "role": "admin",   "created_at": "2026-02-24T01:07:12.9509744+08:00"  } } 
+2026/02/24 01:07:54 auth_middleware.go:37: [认证调试] 去除前缀后的token: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoxLCJ1c2VybmFtZSI6ImFkbWluIiwicm9sZSI6ImFkbWluIiwiaXNzIjoiUG9zdEpzb24iLCJleHAiOi0yNzc3Mzc0Nzk5LCJpYXQiOjE3NzE4NjY0NTZ9.eYRhswVT7oTlgjmkoeD3jO9Bev79nVZNOP3cbqILhkk
+2026/02/24 01:07:54 auth_middleware.go:49: [认证失败] JWT解析错误: token has invalid claims: token is expired
+2026/02/24 01:07:54 middleware.go:94: [POST] /api/json 127.0.0.1:2272 401 1.9992ms Apifox/1.0.0 (https://apifox.com)
+2026/02/24 01:07:54 middleware.go:109:   └─ 请求数据: {"name":"测试","age":20,"email":"test@test.com"}
+2026/02/24 01:07:54 middleware.go:121:   └─ 响应数据: 无效的认证令牌1
+2026/02/24 01:08:59 postjson.go:217: 日志文件切换到: ./logs/app-2026-02-24.log
+2026/02/24 01:09:07 middleware.go:94: [POST] /auth/login 127.0.0.1:1283 200 44.462ms Apifox/1.0.0 (https://apifox.com)
+2026/02/24 01:09:07 middleware.go:109:   └─ 请求数据: {
+    "username":"admin",
+    "password":"admin123"
+}
+2026/02/24 01:09:07 middleware.go:119:   └─ 响应数据: {  "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoxLCJ1c2VybmFtZSI6ImFkbWluIiwicm9sZSI6ImFkbWluIiwiaXNzIjoiUG9zdEpzb24iLCJleHAiOi0yNzc3Mzc0NzA5LCJpYXQiOjE3NzE4NjY1NDd9.j9xTV1Z8NLDS1cwsPEIu5Kc1JcCYgHxcou4xdUSLE5A",  "user": {   "id": 1,   "username": "admin",   "email": "admin@example.com",   "role": "admin",   "created_at": "2026-02-24T01:08:59.907058+08:00"  } } 
+2026/02/24 01:09:24 auth_middleware.go:39: [认证调试] 去除前缀后的token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoxLCJ1c2VybmFtZSI6ImFkbWluIiwicm9sZSI6ImFkbWluIiwiaXNzIjoiUG9zdEpzb24iLCJleHAiOi0yNzc3Mzc0NzA5LCJpYXQiOjE3NzE4NjY1NDd9.j9xTV1Z8NLDS1cwsPEIu5Kc1JcCYgHxcou4xdUSLE5A
+2026/02/24 01:09:24 auth_middleware.go:48: [认证失败] JWT解析错误: token has invalid claims: token is expired
+2026/02/24 01:09:24 middleware.go:94: [POST] /api/json 127.0.0.1:1283 401 0s Apifox/1.0.0 (https://apifox.com)
+2026/02/24 01:09:24 middleware.go:109:   └─ 请求数据: {"name":"测试","age":20,"email":"test@test.com"}
+2026/02/24 01:09:24 middleware.go:121:   └─ 响应数据: 无效的认证令牌1
+2026/02/24 01:10:26 postjson.go:217: 日志文件切换到: ./logs/app-2026-02-24.log
+2026/02/24 01:10:33 auth_middleware.go:39: [认证调试] 去除前缀后的token:eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoxLCJ1c2VybmFtZSI6ImFkbWluIiwicm9sZSI6ImFkbWluIiwiaXNzIjoiUG9zdEpzb24iLCJleHAiOi0yNzc3Mzc0NzA5LCJpYXQiOjE3NzE4NjY1NDd9.j9xTV1Z8NLDS1cwsPEIu5Kc1JcCYgHxcou4xdUSLE5A
+2026/02/24 01:10:33 auth_middleware.go:48: [认证失败] JWT解析错误: token has invalid claims: token is expired
+2026/02/24 01:10:33 middleware.go:94: [POST] /api/json 127.0.0.1:3927 401 669.5µs Apifox/1.0.0 (https://apifox.com)
+2026/02/24 01:10:33 middleware.go:109:   └─ 请求数据: {"name":"测试","age":20,"email":"test@test.com"}
+2026/02/24 01:10:33 middleware.go:121:   └─ 响应数据: 无效的认证令牌1
+2026/02/24 01:11:17 middleware.go:94: [POST] /auth/login 127.0.0.1:3927 200 38.0649ms Apifox/1.0.0 (https://apifox.com)
+2026/02/24 01:11:17 middleware.go:109:   └─ 请求数据: {
+    "username":"admin",
+    "password":"admin123"
+}
+2026/02/24 01:11:17 middleware.go:119:   └─ 响应数据: {  "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoxLCJ1c2VybmFtZSI6ImFkbWluIiwicm9sZSI6ImFkbWluIiwiaXNzIjoiUG9zdEpzb24iLCJleHAiOi0yNzc3Mzc0NTc4LCJpYXQiOjE3NzE4NjY2Nzd9.e5DCDm1UvjAypsiUAZefPj4bplH2fCK22dHY7DhLV7s",  "user": {   "id": 1,   "username": "admin",   "email": "admin@example.com",   "role": "admin",   "created_at": "2026-02-24T01:10:26.8170071+08:00"  } } 
+2026/02/24 01:11:38 middleware.go:94: [POST] /auth/login 127.0.0.1:3927 200 37.2729ms Apifox/1.0.0 (https://apifox.com)
+2026/02/24 01:11:38 middleware.go:109:   └─ 请求数据: {
+    "username":"admin",
+    "password":"admin123"
+}
+2026/02/24 01:11:38 middleware.go:119:   └─ 响应数据: {  "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoxLCJ1c2VybmFtZSI6ImFkbWluIiwicm9sZSI6ImFkbWluIiwiaXNzIjoiUG9zdEpzb24iLCJleHAiOi0yNzc3Mzc0NTU4LCJpYXQiOjE3NzE4NjY2OTh9.jfKkEMNT63TqG82vPggFNkhPjYrnKOyWi3apBWcY0b0",  "user": {   "id": 1,   "username": "admin",   "email": "admin@example.com",   "role": "admin",   "created_at": "2026-02-24T01:10:26.8170071+08:00"  } } 
+2026/02/24 01:11:49 auth_middleware.go:39: [认证调试] 去除前缀后的token:eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoxLCJ1c2VybmFtZSI6ImFkbWluIiwicm9sZSI6ImFkbWluIiwiaXNzIjoiUG9zdEpzb24iLCJleHAiOi0yNzc3Mzc0NTU4LCJpYXQiOjE3NzE4NjY2OTh9.jfKkEMNT63TqG82vPggFNkhPjYrnKOyWi3apBWcY0b0
+2026/02/24 01:11:49 auth_middleware.go:48: [认证失败] JWT解析错误: token has invalid claims: token is expired
+2026/02/24 01:11:49 middleware.go:94: [POST] /api/json 127.0.0.1:3927 401 0s Apifox/1.0.0 (https://apifox.com)
+2026/02/24 01:11:49 middleware.go:109:   └─ 请求数据: {"name":"测试","age":20,"email":"test@test.com"}
+2026/02/24 01:11:49 middleware.go:121:   └─ 响应数据: 无效的认证令牌1
+2026/02/24 01:17:36 postjson.go:217: 日志文件切换到: ./logs/app-2026-02-24.log
+2026/02/24 01:17:50 auth_middleware.go:39: [认证调试] 去除前缀后的token:eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoxLCJ1c2VybmFtZSI6ImFkbWluIiwicm9sZSI6ImFkbWluIiwiaXNzIjoiUG9zdEpzb24iLCJleHAiOi0yNzc3Mzc0NTU4LCJpYXQiOjE3NzE4NjY2OTh9.jfKkEMNT63TqG82vPggFNkhPjYrnKOyWi3apBWcY0b0
+2026/02/24 01:17:50 auth_middleware.go:48: [认证失败] JWT解析错误: token has invalid claims: token is expired
+2026/02/24 01:17:50 middleware.go:94: [POST] /api/json 127.0.0.1:1555 401 560.6µs Apifox/1.0.0 (https://apifox.com)
+2026/02/24 01:17:50 middleware.go:109:   └─ 请求数据: {"name":"测试","age":20,"email":"test@test.com"}
+2026/02/24 01:17:50 middleware.go:121:   └─ 响应数据: 无效的认证令牌1
+2026/02/24 01:18:14 middleware.go:94: [POST] /auth/login 127.0.0.1:1555 200 37.5232ms Apifox/1.0.0 (https://apifox.com)
+2026/02/24 01:18:14 middleware.go:109:   └─ 请求数据: {
+    "username":"admin",
+    "password":"admin123"
+}
+2026/02/24 01:18:14 middleware.go:119:   └─ 响应数据: {  "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoxLCJ1c2VybmFtZSI6ImFkbWluIiwicm9sZSI6ImFkbWluIiwiaXNzIjoiUG9zdEpzb24iLCJleHAiOjE3NzE5NTM0OTQsImlhdCI6MTc3MTg2NzA5NH0.rKVIPZUcEdFzicUSHDAaInC0PMJbTGYK7zf4OYEbbks",  "user": {   "id": 1,   "username": "admin",   "email": "admin@example.com",   "role": "admin",   "created_at": "2026-02-24T01:17:36.6862315+08:00"  } } 
+2026/02/24 01:18:22 auth_middleware.go:39: [认证调试] 去除前缀后的token:eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoxLCJ1c2VybmFtZSI6ImFkbWluIiwicm9sZSI6ImFkbWluIiwiaXNzIjoiUG9zdEpzb24iLCJleHAiOjE3NzE5NTM0OTQsImlhdCI6MTc3MTg2NzA5NH0.rKVIPZUcEdFzicUSHDAaInC0PMJbTGYK7zf4OYEbbks
+2026/02/24 01:18:22 auth_middleware.go:61: [认证成功] 用户: admin (ID: 1, 角色: admin) - POST /api/json
+2026/02/24 01:18:22 middleware.go:94: [POST] /api/json 127.0.0.1:1555 404 0s Apifox/1.0.0 (https://apifox.com)
+2026/02/24 01:18:22 middleware.go:109:   └─ 请求数据: {"name":"测试","age":20,"email":"test@test.com"}
+2026/02/24 01:18:22 middleware.go:121:   └─ 响应数据: 404 page not found
+2026/02/24 01:18:27 auth_middleware.go:39: [认证调试] 去除前缀后的token:eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoxLCJ1c2VybmFtZSI6ImFkbWluIiwicm9sZSI6ImFkbWluIiwiaXNzIjoiUG9zdEpzb24iLCJleHAiOjE3NzE5NTM0OTQsImlhdCI6MTc3MTg2NzA5NH0.rKVIPZUcEdFzicUSHDAaInC0PMJbTGYK7zf4OYEbbks
+2026/02/24 01:18:27 auth_middleware.go:61: [认证成功] 用户: admin (ID: 1, 角色: admin) - POST /api/json
+2026/02/24 01:18:27 middleware.go:94: [POST] /api/json 127.0.0.1:1555 404 0s Apifox/1.0.0 (https://apifox.com)
+2026/02/24 01:18:27 middleware.go:109:   └─ 请求数据: {"name":"测试","age":20,"email":"test@test.com"}
+2026/02/24 01:18:27 middleware.go:121:   └─ 响应数据: 404 page not found
+2026/02/24 01:18:30 auth_middleware.go:39: [认证调试] 去除前缀后的token:eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoxLCJ1c2VybmFtZSI6ImFkbWluIiwicm9sZSI6ImFkbWluIiwiaXNzIjoiUG9zdEpzb24iLCJleHAiOjE3NzE5NTM0OTQsImlhdCI6MTc3MTg2NzA5NH0.rKVIPZUcEdFzicUSHDAaInC0PMJbTGYK7zf4OYEbbks
+2026/02/24 01:18:30 auth_middleware.go:61: [认证成功] 用户: admin (ID: 1, 角色: admin) - POST /api/json
+2026/02/24 01:18:30 middleware.go:94: [POST] /api/json 127.0.0.1:1555 404 0s Apifox/1.0.0 (https://apifox.com)
+2026/02/24 01:18:30 middleware.go:109:   └─ 请求数据: {"name":"测试","age":20,"email":"test@test.com"}
+2026/02/24 01:18:30 middleware.go:121:   └─ 响应数据: 404 page not found
+2026/02/24 01:29:54 postjson.go:217: 日志文件切换到: ./logs/app-2026-02-24.log
+2026/02/24 01:29:58 middleware.go:94: [POST] /auth/login 127.0.0.1:10211 200 37.1562ms Apifox/1.0.0 (https://apifox.com)
+2026/02/24 01:29:58 middleware.go:109:   └─ 请求数据: {
+    "username":"admin",
+    "password":"admin123"
+}
+2026/02/24 01:29:58 middleware.go:119:   └─ 响应数据: {  "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoxLCJ1c2VybmFtZSI6ImFkbWluIiwicm9sZSI6ImFkbWluIiwiaXNzIjoiUG9zdEpzb24iLCJleHAiOjE3NzE5NTQxOTgsImlhdCI6MTc3MTg2Nzc5OH0.mbsO6iXGYsKnEe5NnQbRnvaGBcJBXOE5a7mvwrTYH4E",  "user": {   "id": 1,   "username": "admin",   "email": "admin@example.com",   "role": "admin",   "created_at": "2026-02-24T01:29:54.3459193+08:00"  } } 
+2026/02/24 01:30:14 auth_middleware.go:48: [验证调试] Token还有效，剩余时间: 23h59m43.8208738s
+2026/02/24 01:30:14 auth_middleware.go:65: [认证成功] 用户: admin (ID: 1, 角色: admin) - POST /api/json
+2026/02/24 01:30:14 middleware.go:94: [POST] /api/json 127.0.0.1:10211 404 0s Apifox/1.0.0 (https://apifox.com)
+2026/02/24 01:30:14 middleware.go:109:   └─ 请求数据: {"name":"测试","age":20,"email":"test@test.com"}
+2026/02/24 01:30:14 middleware.go:121:   └─ 响应数据: 404 page not found
+2026/02/24 01:30:18 auth_middleware.go:48: [验证调试] Token还有效，剩余时间: 23h59m39.6905592s
+2026/02/24 01:30:18 auth_middleware.go:65: [认证成功] 用户: admin (ID: 1, 角色: admin) - POST /api/json
+2026/02/24 01:30:18 middleware.go:94: [POST] /api/json 127.0.0.1:10211 404 0s Apifox/1.0.0 (https://apifox.com)
+2026/02/24 01:30:18 middleware.go:109:   └─ 请求数据: {"name":"测试","age":20,"email":"test@test.com"}
+2026/02/24 01:30:18 middleware.go:121:   └─ 响应数据: 404 page not found
+2026/02/24 01:32:50 postjson.go:217: 日志文件切换到: ./logs/app-2026-02-24.log
+2026/02/24 01:33:01 middleware.go:94: [POST] /auth/login 127.0.0.1:11394 200 37.1814ms Apifox/1.0.0 (https://apifox.com)
+2026/02/24 01:33:01 middleware.go:109:   └─ 请求数据: {
+    "username":"admin",
+    "password":"admin123"
+}
+2026/02/24 01:33:01 middleware.go:119:   └─ 响应数据: {  "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoxLCJ1c2VybmFtZSI6ImFkbWluIiwicm9sZSI6ImFkbWluIiwiaXNzIjoiUG9zdEpzb24iLCJleHAiOjE3NzE5NTQzODEsImlhdCI6MTc3MTg2Nzk4MX0._U4u6-uUc58bYQyXultZQwGEDLpV00l3TBZzUJaxwts",  "user": {   "id": 1,   "username": "admin",   "email": "admin@example.com",   "role": "admin",   "created_at": "2026-02-24T01:32:50.7272469+08:00"  } } 
+2026/02/24 01:33:09 auth_middleware.go:48: [验证调试] Token还有效，剩余时间: 23h56m48.4870112s
+2026/02/24 01:33:09 auth_middleware.go:65: [认证成功] 用户: admin (ID: 1, 角色: admin) - POST /api/json
+2026/02/24 01:33:09 middleware.go:94: [POST] /api/json 127.0.0.1:11394 404 0s Apifox/1.0.0 (https://apifox.com)
+2026/02/24 01:33:09 middleware.go:109:   └─ 请求数据: {"name":"测试","age":20,"email":"test@test.com"}
+2026/02/24 01:33:09 middleware.go:121:   └─ 响应数据: 404 page not found
+2026/02/24 01:35:53 postjson.go:217: 日志文件切换到: ./logs/app-2026-02-24.log
+2026/02/24 01:35:58 middleware.go:94: [POST] /auth/login 127.0.0.1:6414 200 37.0095ms Apifox/1.0.0 (https://apifox.com)
+2026/02/24 01:35:58 middleware.go:109:   └─ 请求数据: {
+    "username":"admin",
+    "password":"admin123"
+}
+2026/02/24 01:35:58 middleware.go:119:   └─ 响应数据: {  "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoxLCJ1c2VybmFtZSI6ImFkbWluIiwicm9sZSI6ImFkbWluIiwiaXNzIjoiUG9zdEpzb24iLCJleHAiOjE3NzE5NTQ1NTgsImlhdCI6MTc3MTg2ODE1OH0.rAZ9U6xfb23-JFQ9fbJjbhCV3rpnqEi42-KOA-g5RYY",  "user": {   "id": 1,   "username": "admin",   "email": "admin@example.com",   "role": "admin",   "created_at": "2026-02-24T01:35:53.4821881+08:00"  } } 
+2026/02/24 01:36:10 auth_middleware.go:48: [验证调试] Token还有效，剩余时间: 23h59m47.0877674s
+2026/02/24 01:36:10 auth_middleware.go:65: [认证成功] 用户: admin (ID: 1, 角色: admin) - POST /api/json
+2026/02/24 01:36:10 middleware.go:94: [POST] /api/json 127.0.0.1:6414 404 0s Apifox/1.0.0 (https://apifox.com)
+2026/02/24 01:36:10 middleware.go:109:   └─ 请求数据: {"name":"测试","age":20,"email":"test@test.com"}
+2026/02/24 01:36:10 middleware.go:121:   └─ 响应数据: 404 page not found
+2026/02/24 01:38:20 postjson.go:217: 日志文件切换到: ./logs/app-2026-02-24.log
+2026/02/24 01:38:36 auth_middleware.go:48: [验证调试] Token还有效，剩余时间: 23h57m21.1862468s
+2026/02/24 01:38:36 auth_middleware.go:65: [认证成功] 用户: admin (ID: 1, 角色: admin) - POST /api/json
+2026/02/24 01:38:36 middleware.go:94: [POST] /api/json 127.0.0.1:4600 404 4.0281ms Apifox/1.0.0 (https://apifox.com)
+2026/02/24 01:38:36 middleware.go:109:   └─ 请求数据: {"name":"测试","age":20,"email":"test@test.com"}
+2026/02/24 01:38:36 middleware.go:121:   └─ 响应数据: 404 page not found
+2026/02/24 01:38:38 auth_middleware.go:48: [验证调试] Token还有效，剩余时间: 23h57m19.1391226s
+2026/02/24 01:38:38 auth_middleware.go:65: [认证成功] 用户: admin (ID: 1, 角色: admin) - POST /api/json
+2026/02/24 01:38:38 middleware.go:94: [POST] /api/json 127.0.0.1:4600 404 0s Apifox/1.0.0 (https://apifox.com)
+2026/02/24 01:38:38 middleware.go:109:   └─ 请求数据: {"name":"测试","age":20,"email":"test@test.com"}
+2026/02/24 01:38:38 middleware.go:121:   └─ 响应数据: 404 page not found
+2026/02/24 01:38:49 auth_middleware.go:48: [验证调试] Token还有效，剩余时间: 23h57m8.7750136s
+2026/02/24 01:38:49 auth_middleware.go:65: [认证成功] 用户: admin (ID: 1, 角色: admin) - POST /api/api-json
+2026/02/24 01:38:49 middleware.go:94: [POST] /api/api-json 127.0.0.1:4600 404 0s Apifox/1.0.0 (https://apifox.com)
+2026/02/24 01:38:49 middleware.go:109:   └─ 请求数据: {"name":"测试","age":20,"email":"test@test.com"}
+2026/02/24 01:38:49 middleware.go:121:   └─ 响应数据: 404 page not found
+2026/02/24 01:38:50 auth_middleware.go:48: [验证调试] Token还有效，剩余时间: 23h57m7.7831033s
+2026/02/24 01:38:50 auth_middleware.go:65: [认证成功] 用户: admin (ID: 1, 角色: admin) - POST /api/api-json
+2026/02/24 01:38:50 middleware.go:94: [POST] /api/api-json 127.0.0.1:4600 404 0s Apifox/1.0.0 (https://apifox.com)
+2026/02/24 01:38:50 middleware.go:109:   └─ 请求数据: {"name":"测试","age":20,"email":"test@test.com"}
+2026/02/24 01:38:50 middleware.go:121:   └─ 响应数据: 404 page not found
+2026/02/24 01:38:53 auth_middleware.go:48: [验证调试] Token还有效，剩余时间: 23h57m4.3121708s
+2026/02/24 01:38:53 auth_middleware.go:65: [认证成功] 用户: admin (ID: 1, 角色: admin) - POST /api/
+2026/02/24 01:38:53 middleware.go:94: [POST] /api/ 127.0.0.1:4600 404 0s Apifox/1.0.0 (https://apifox.com)
+2026/02/24 01:38:53 middleware.go:109:   └─ 请求数据: {"name":"测试","age":20,"email":"test@test.com"}
+2026/02/24 01:38:53 middleware.go:121:   └─ 响应数据: 404 page not found
+2026/02/24 01:47:40 postjson.go:217: 日志文件切换到: ./logs/app-2026-02-24.log
+2026/02/24 01:47:47 middleware.go:94: [POST] /auth/login 127.0.0.1:7904 200 37.6378ms Apifox/1.0.0 (https://apifox.com)
+2026/02/24 01:47:47 middleware.go:109:   └─ 请求数据: {
+    "username":"admin",
+    "password":"admin123"
+}
+2026/02/24 01:47:47 middleware.go:119:   └─ 响应数据: {  "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoxLCJ1c2VybmFtZSI6ImFkbWluIiwicm9sZSI6ImFkbWluIiwiaXNzIjoiUG9zdEpzb24iLCJleHAiOjE3NzE5NTUyNjcsImlhdCI6MTc3MTg2ODg2N30.Bwdy-akOkRyhWSP5MvVtzJIrTeJnRv4X2l_f0Ko5Dzc",  "user": {   "id": 1,   "username": "admin",   "email": "admin@example.com",   "role": "admin",   "created_at": "2026-02-24T01:47:40.3321665+08:00"  } } 
+2026/02/24 01:47:53 auth_middleware.go:61: [认证成功] 用户: admin (ID: 1, 角色: admin) - POST /api/
+2026/02/24 01:47:53 middleware.go:94: [POST] /api/ 127.0.0.1:7904 404 0s Apifox/1.0.0 (https://apifox.com)
+2026/02/24 01:47:53 middleware.go:109:   └─ 请求数据: {"name":"测试","age":20,"email":"test@test.com"}
+2026/02/24 01:47:53 middleware.go:121:   └─ 响应数据: 404 page not found
+2026/02/24 01:48:27 auth_middleware.go:61: [认证成功] 用户: admin (ID: 1, 角色: admin) - POST /api/json
+2026/02/24 01:48:27 middleware.go:94: [POST] /api/json 127.0.0.1:7904 404 0s Apifox/1.0.0 (https://apifox.com)
+2026/02/24 01:48:27 middleware.go:109:   └─ 请求数据: {"name":"测试","age":20,"email":"test@test.com"}
+2026/02/24 01:48:27 middleware.go:121:   └─ 响应数据: 404 page not found
+2026/02/24 01:48:38 auth_middleware.go:61: [认证成功] 用户: admin (ID: 1, 角色: admin) - POST /api/json
+2026/02/24 01:48:38 middleware.go:94: [POST] /api/json 127.0.0.1:7904 404 0s Apifox/1.0.0 (https://apifox.com)
+2026/02/24 01:48:38 middleware.go:109:   └─ 请求数据: {"name":"测试","age":20,"email":"test@test.com"}
+2026/02/24 01:48:38 middleware.go:121:   └─ 响应数据: 404 page not found
+2026/02/24 01:48:40 auth_middleware.go:61: [认证成功] 用户: admin (ID: 1, 角色: admin) - POST /api/json
+2026/02/24 01:48:40 middleware.go:94: [POST] /api/json 127.0.0.1:7904 404 0s Apifox/1.0.0 (https://apifox.com)
+2026/02/24 01:48:40 middleware.go:109:   └─ 请求数据: {"name":"测试","age":20,"email":"test@test.com"}
+2026/02/24 01:48:40 middleware.go:121:   └─ 响应数据: 404 page not found
+2026/02/24 01:49:10 middleware.go:94: [POST] /json 127.0.0.1:7904 404 0s Apifox/1.0.0 (https://apifox.com)
+2026/02/24 01:49:10 middleware.go:109:   └─ 请求数据: {"name":"测试","age":20,"email":"test@test.com"}
+2026/02/24 01:49:10 middleware.go:121:   └─ 响应数据: 404 page not found
+2026/02/24 01:49:12 middleware.go:94: [POST] /json 127.0.0.1:7904 404 0s Apifox/1.0.0 (https://apifox.com)
+2026/02/24 01:49:12 middleware.go:109:   └─ 请求数据: {"name":"测试","age":20,"email":"test@test.com"}
+2026/02/24 01:49:12 middleware.go:121:   └─ 响应数据: 404 page not found
+2026/02/24 01:49:13 middleware.go:94: [POST] /json 127.0.0.1:7904 404 0s Apifox/1.0.0 (https://apifox.com)
+2026/02/24 01:49:13 middleware.go:109:   └─ 请求数据: {"name":"测试","age":20,"email":"test@test.com"}
+2026/02/24 01:49:13 middleware.go:121:   └─ 响应数据: 404 page not found
+2026/02/24 01:49:14 middleware.go:94: [POST] /json 127.0.0.1:7904 404 0s Apifox/1.0.0 (https://apifox.com)
+2026/02/24 01:49:14 middleware.go:109:   └─ 请求数据: {"name":"测试","age":20,"email":"test@test.com"}
+2026/02/24 01:49:14 middleware.go:121:   └─ 响应数据: 404 page not found
+2026/02/24 01:49:41 postjson.go:99: HTTP服务器启动在 :8443
+2026/02/24 01:49:41 postjson.go:219: 日志文件切换到: ./logs/app-2026-02-24.log
+2026/02/24 01:50:29 postjson.go:220: 日志文件切换到: ./logs/app-2026-02-24.log
+2026/02/24 01:50:29 postjson.go:100: HTTP服务器启动在 :8443
+2026/02/24 01:51:24 postjson.go:222: 日志文件切换到: ./logs/app-2026-02-24.log
+2026/02/24 01:52:25 middleware.go:94: [POST] //auth/register 127.0.0.1:5899 307 0s Apifox/1.0.0 (https://apifox.com)
+2026/02/24 01:52:25 middleware.go:109:   └─ 请求数据: {"name":"测试","age":20,"email":"test@test.com"}
+2026/02/24 01:52:25 middleware.go:94: [POST] /auth/register 127.0.0.1:5899 200 1.0006ms Apifox/1.0.0 (https://apifox.com)
+2026/02/24 01:52:25 middleware.go:109:   └─ 请求数据: {"name":"测试","age":20,"email":"test@test.com"}
+2026/02/24 01:52:25 middleware.go:119:   └─ 响应数据: {  "message": "注册功能待实现" }
+2026/02/24 01:52:37 middleware.go:94: [POST] /auth/register 127.0.0.1:5899 200 0s Apifox/1.0.0 (https://apifox.com)
+2026/02/24 01:52:37 middleware.go:109:   └─ 请求数据: {"name":"测试","age":20,"email":"test@test.com"}
+2026/02/24 01:52:37 middleware.go:119:   └─ 响应数据: {  "message": "注册功能待实现" }
+2026/02/24 01:52:42 middleware.go:94: [POST] /auth/ 127.0.0.1:5899 404 0s Apifox/1.0.0 (https://apifox.com)
+2026/02/24 01:52:42 middleware.go:109:   └─ 请求数据: {"name":"测试","age":20,"email":"test@test.com"}
+2026/02/24 01:52:42 middleware.go:121:   └─ 响应数据: 404 page not found
+2026/02/24 01:52:47 middleware.go:94: [POST] /api 127.0.0.1:5899 307 0s Apifox/1.0.0 (https://apifox.com)
+2026/02/24 01:52:47 middleware.go:109:   └─ 请求数据: {"name":"测试","age":20,"email":"test@test.com"}
+2026/02/24 01:52:47 auth_middleware.go:61: [认证成功] 用户: admin (ID: 1, 角色: admin) - POST /api/
+2026/02/24 01:52:47 middleware.go:94: [POST] /api/ 127.0.0.1:5899 404 0s Apifox/1.0.0 (https://apifox.com)
+2026/02/24 01:52:47 middleware.go:109:   └─ 请求数据: {"name":"测试","age":20,"email":"test@test.com"}
+2026/02/24 01:52:47 middleware.go:121:   └─ 响应数据: 404 page not found
+2026/02/24 01:52:49 middleware.go:94: [POST] /api 127.0.0.1:5899 307 0s Apifox/1.0.0 (https://apifox.com)
+2026/02/24 01:52:49 middleware.go:109:   └─ 请求数据: {"name":"测试","age":20,"email":"test@test.com"}
+2026/02/24 01:52:49 auth_middleware.go:61: [认证成功] 用户: admin (ID: 1, 角色: admin) - POST /api/
+2026/02/24 01:52:49 middleware.go:94: [POST] /api/ 127.0.0.1:5899 404 0s Apifox/1.0.0 (https://apifox.com)
+2026/02/24 01:52:49 middleware.go:109:   └─ 请求数据: {"name":"测试","age":20,"email":"test@test.com"}
+2026/02/24 01:52:49 middleware.go:121:   └─ 响应数据: 404 page not found
+2026/02/24 01:52:57 middleware.go:94: [POST] /health 127.0.0.1:5899 200 0s Apifox/1.0.0 (https://apifox.com)
+2026/02/24 01:52:57 middleware.go:109:   └─ 请求数据: {"name":"测试","age":20,"email":"test@test.com"}
+2026/02/24 01:52:57 middleware.go:119:   └─ 响应数据: {  "status": "healthy",  "timestamp": "2026-02-24T01:52:57+08:00" }
+2026/02/24 01:53:53 middleware.go:94: [POST] /json 127.0.0.1:5899 404 0s Apifox/1.0.0 (https://apifox.com)
+2026/02/24 01:53:53 middleware.go:109:   └─ 请求数据: {"name":"测试","age":20,"email":"test@test.com"}
+2026/02/24 01:53:53 middleware.go:121:   └─ 响应数据: 404 page not found
+2026/02/24 01:53:55 middleware.go:94: [POST] /json 127.0.0.1:5899 404 0s Apifox/1.0.0 (https://apifox.com)
+2026/02/24 01:53:55 middleware.go:109:   └─ 请求数据: {"name":"测试","age":20,"email":"test@test.com"}
+2026/02/24 01:53:55 middleware.go:121:   └─ 响应数据: 404 page not found
+2026/02/24 01:57:15 postjson.go:224: 日志文件切换到: ./logs/app-2026-02-24.log
+2026/02/24 02:00:52 postjson.go:224: 日志文件切换到: ./logs/app-2026-02-24.log
+2026/02/24 02:03:03 postjson.go:227: 日志文件切换到: ./logs/app-2026-02-24.log
+2026/02/24 02:04:38 postjson.go:107: HTTP服务器启动在 :8443
+2026/02/24 02:04:38 postjson.go:227: 日志文件切换到: ./logs/app-2026-02-24.log
+2026/02/24 02:05:46 middleware.go:94: [POST] /auth/login 127.0.0.1:13735 200 38.096ms Apifox/1.0.0 (https://apifox.com)
+2026/02/24 02:05:46 middleware.go:109:   └─ 请求数据: {
+    "username":"admin",
+    "password":"admin123"
+}
+2026/02/24 02:05:46 middleware.go:119:   └─ 响应数据: {  "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoxLCJ1c2VybmFtZSI6ImFkbWluIiwicm9sZSI6ImFkbWluIiwiaXNzIjoiUG9zdEpzb24iLCJleHAiOjE3NzE5NTYzNDYsImlhdCI6MTc3MTg2OTk0Nn0.PG581LFqtVPw9V4-DmhmfU9IelnDXC6zNdvQAul4eHk",  "user": {   "id": 1,   "username": "admin",   "email": "admin@example.com",   "role": "admin",   "created_at": "2026-02-24T02:04:38.3507163+08:00"  } } 
+2026/02/24 02:05:53 middleware.go:94: [POST] /json 127.0.0.1:13735 404 0s Apifox/1.0.0 (https://apifox.com)
+2026/02/24 02:05:53 middleware.go:109:   └─ 请求数据: {"name":"测试","age":20,"email":"test@test.com"}
+2026/02/24 02:05:53 middleware.go:121:   └─ 响应数据: 404 page not found
+2026/02/24 02:05:58 auth_middleware.go:61: [认证成功] 用户: admin (ID: 1, 角色: admin) - POST /api/json
+2026/02/24 02:05:58 middleware.go:94: [POST] /api/json 127.0.0.1:13735 404 0s Apifox/1.0.0 (https://apifox.com)
+2026/02/24 02:05:58 middleware.go:109:   └─ 请求数据: {"name":"测试","age":20,"email":"test@test.com"}
+2026/02/24 02:05:58 middleware.go:121:   └─ 响应数据: 404 page not found
+2026/02/24 02:06:02 auth_middleware.go:61: [认证成功] 用户: admin (ID: 1, 角色: admin) - POST /api/json
+2026/02/24 02:06:02 middleware.go:94: [POST] /api/json 127.0.0.1:13735 404 0s Apifox/1.0.0 (https://apifox.com)
+2026/02/24 02:06:02 middleware.go:109:   └─ 请求数据: {"name":"测试","age":20,"email":"test@test.com"}
+2026/02/24 02:06:02 middleware.go:121:   └─ 响应数据: 404 page not found
+2026/02/24 02:06:18 auth_middleware.go:61: [认证成功] 用户: admin (ID: 1, 角色: admin) - POST /api/json
+2026/02/24 02:06:18 middleware.go:94: [POST] /api/json 127.0.0.1:13735 404 0s Apifox/1.0.0 (https://apifox.com)
+2026/02/24 02:06:18 middleware.go:109:   └─ 请求数据: {"name":"测试","age":20,"email":"test@test.com"}
+2026/02/24 02:06:18 middleware.go:121:   └─ 响应数据: 404 page not found
+2026/02/24 02:06:22 auth_middleware.go:61: [认证成功] 用户: admin (ID: 1, 角色: admin) - POST /api/json
+2026/02/24 02:06:22 middleware.go:94: [POST] /api/json 127.0.0.1:13735 404 0s Apifox/1.0.0 (https://apifox.com)
+2026/02/24 02:06:22 middleware.go:109:   └─ 请求数据: 
+2026/02/24 02:06:22 middleware.go:121:   └─ 响应数据: 404 page not found
+2026/02/24 02:06:29 auth_middleware.go:61: [认证成功] 用户: admin (ID: 1, 角色: admin) - POST /api/json
+2026/02/24 02:06:29 middleware.go:94: [POST] /api/json 127.0.0.1:13735 404 0s Apifox/1.0.0 (https://apifox.com)
+2026/02/24 02:06:29 middleware.go:109:   └─ 请求数据: {"name":"测试","age":20,"email":"test@test.com"}
+2026/02/24 02:06:29 middleware.go:121:   └─ 响应数据: 404 page not found
+2026/02/24 02:11:56 middleware.go:94: [GET] /auth/login 127.0.0.1:3529 405 0s Apifox/1.0.0 (https://apifox.com)
+2026/02/24 02:11:56 middleware.go:109:   └─ 请求数据: 
+2026/02/24 02:11:56 middleware.go:121:   └─ 响应数据: 只接受POST请求
+2026/02/24 02:12:02 auth_middleware.go:61: [认证成功] 用户: admin (ID: 1, 角色: admin) - GET /api/json
+2026/02/24 02:12:02 middleware.go:94: [GET] /api/json 127.0.0.1:3529 404 0s Apifox/1.0.0 (https://apifox.com)
+2026/02/24 02:12:02 middleware.go:109:   └─ 请求数据: 
+2026/02/24 02:12:02 middleware.go:121:   └─ 响应数据: 404 page not found
+2026/02/24 02:21:07 middleware.go:94: [POST] /auth/profile 127.0.0.1:13661 404 0s Apifox/1.0.0 (https://apifox.com)
+2026/02/24 02:21:07 middleware.go:109:   └─ 请求数据: {"name":"测试","age":20,"email":"test@test.com"}
+2026/02/24 02:21:07 middleware.go:121:   └─ 响应数据: 404 page not found
+2026/02/24 02:21:09 middleware.go:94: [POST] /auth/profile 127.0.0.1:13661 404 0s Apifox/1.0.0 (https://apifox.com)
+2026/02/24 02:21:09 middleware.go:109:   └─ 请求数据: {"name":"测试","age":20,"email":"test@test.com"}
+2026/02/24 02:21:09 middleware.go:121:   └─ 响应数据: 404 page not found
+2026/02/24 02:21:10 middleware.go:94: [POST] /auth/profile 127.0.0.1:13661 404 0s Apifox/1.0.0 (https://apifox.com)
+2026/02/24 02:21:10 middleware.go:109:   └─ 请求数据: {"name":"测试","age":20,"email":"test@test.com"}
+2026/02/24 02:21:10 middleware.go:121:   └─ 响应数据: 404 page not found
+2026/02/24 02:54:33 postjson.go:224: 日志文件切换到: ./logs/app-2026-02-24.log
+2026/02/24 02:54:33 postjson.go:104: HTTP服务器启动在 :8443
+2026/02/24 02:54:43 middleware.go:94: [POST] /auth/login 127.0.0.1:8540 200 37.0604ms Apifox/1.0.0 (https://apifox.com)
+2026/02/24 02:54:43 middleware.go:109:   └─ 请求数据: {
+    "username":"admin",
+    "password":"admin123"
+}
+2026/02/24 02:54:43 middleware.go:119:   └─ 响应数据: {  "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoxLCJ1c2VybmFtZSI6ImFkbWluIiwicm9sZSI6ImFkbWluIiwiaXNzIjoiUG9zdEpzb24iLCJleHAiOjE3NzE5NTkyODMsImlhdCI6MTc3MTg3Mjg4M30.49cvpnBmuxXqsswlLBsTak92ZLyEKM3VVrfK876HL6U",  "user": {   "id": 1,   "username": "admin",   "email": "admin@example.com",   "role": "admin",   "created_at": "2026-02-24T02:54:33.0834058+08:00"  } } 
+2026/02/24 02:54:53 middleware.go:94: [POST] /auth/profile 127.0.0.1:8540 404 1.9996ms Apifox/1.0.0 (https://apifox.com)
+2026/02/24 02:54:53 middleware.go:109:   └─ 请求数据: {"name":"测试","age":20,"email":"test@test.com"}
+2026/02/24 02:54:53 middleware.go:121:   └─ 响应数据: 404 page not found
+2026/02/24 02:55:00 middleware.go:94: [POST] /api 127.0.0.1:8540 307 0s Apifox/1.0.0 (https://apifox.com)
+2026/02/24 02:55:00 middleware.go:109:   └─ 请求数据: {"name":"测试","age":20,"email":"test@test.com"}
+2026/02/24 02:55:00 auth_middleware.go:62: [认证成功] 用户: admin (ID: 1, 角色: admin) - POST /api/
+2026/02/24 02:55:00 middleware.go:94: [POST] /api/ 127.0.0.1:8540 404 0s Apifox/1.0.0 (https://apifox.com)
+2026/02/24 02:55:00 middleware.go:109:   └─ 请求数据: {"name":"测试","age":20,"email":"test@test.com"}
+2026/02/24 02:55:00 middleware.go:121:   └─ 响应数据: 404 page not found
+2026/02/24 02:55:13 auth_middleware.go:62: [认证成功] 用户: admin (ID: 1, 角色: admin) - POST /api/json
+2026/02/24 02:55:13 middleware.go:94: [POST] /api/json 127.0.0.1:8540 404 0s Apifox/1.0.0 (https://apifox.com)
+2026/02/24 02:55:13 middleware.go:109:   └─ 请求数据: {"name":"测试","age":20,"email":"test@test.com"}
+2026/02/24 02:55:13 middleware.go:121:   └─ 响应数据: 404 page not found
+2026/02/24 02:55:15 auth_middleware.go:62: [认证成功] 用户: admin (ID: 1, 角色: admin) - POST /api/json
+2026/02/24 02:55:15 middleware.go:94: [POST] /api/json 127.0.0.1:8540 404 0s Apifox/1.0.0 (https://apifox.com)
+2026/02/24 02:55:15 middleware.go:109:   └─ 请求数据: {"name":"测试","age":20,"email":"test@test.com"}
+2026/02/24 02:55:15 middleware.go:121:   └─ 响应数据: 404 page not found
+2026/02/24 02:55:21 postjson.go:185: 正在关闭服务器...
+2026/02/24 02:55:21 postjson.go:194: 服务器已关闭
+2026/02/24 03:01:48 postjson.go:274: 日志文件切换到: ./logs/app-2026-02-24.log
+2026/02/24 03:01:48 postjson.go:154: HTTP服务器启动在 :8443
+2026/02/24 03:02:12 middleware.go:94: [POST] /auth/login 127.0.0.1:13927 200 37.9061ms Apifox/1.0.0 (https://apifox.com)
+2026/02/24 03:02:12 middleware.go:109:   └─ 请求数据: {
+    "username":"admin",
+    "password":"admin123"
+}
+2026/02/24 03:02:12 middleware.go:119:   └─ 响应数据: {  "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoxLCJ1c2VybmFtZSI6ImFkbWluIiwicm9sZSI6ImFkbWluIiwiaXNzIjoiUG9zdEpzb24iLCJleHAiOjE3NzE5NTk3MzIsImlhdCI6MTc3MTg3MzMzMn0.1GM_cNax5AWXgHMID10AURXeR134YnZ2yV32H48zo6s",  "user": {   "id": 1,   "username": "admin",   "email": "admin@example.com",   "role": "admin",   "created_at": "2026-02-24T03:01:48.3165381+08:00"  } } 
+2026/02/24 03:02:34 auth_middleware.go:62: [认证成功] 用户: admin (ID: 1, 角色: admin) - POST /api/json
+2026/02/24 03:02:34 middleware.go:94: [POST] /api/json 127.0.0.1:13927 404 1.5291ms Apifox/1.0.0 (https://apifox.com)
+2026/02/24 03:02:34 middleware.go:109:   └─ 请求数据: {"name":"测试","age":20,"email":"test@test.com"}
+2026/02/24 03:02:34 middleware.go:121:   └─ 响应数据: 404 page not found
+2026/02/24 03:04:43 postjson.go:235: 正在关闭服务器...
+2026/02/24 03:04:43 postjson.go:244: 服务器已关闭
+2026/02/24 03:05:01 postjson.go:277: 日志文件切换到: ./logs/app-2026-02-24.log
+2026/02/24 03:05:01 postjson.go:157: HTTP服务器启动在 :8443
+2026/02/24 03:05:08 middleware.go:94: [POST] /auth/login 127.0.0.1:8425 200 39.1627ms Apifox/1.0.0 (https://apifox.com)
+2026/02/24 03:05:08 middleware.go:109:   └─ 请求数据: {
+    "username":"admin",
+    "password":"admin123"
+}
+2026/02/24 03:05:08 middleware.go:119:   └─ 响应数据: {  "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoxLCJ1c2VybmFtZSI6ImFkbWluIiwicm9sZSI6ImFkbWluIiwiaXNzIjoiUG9zdEpzb24iLCJleHAiOjE3NzE5NTk5MDgsImlhdCI6MTc3MTg3MzUwOH0.Gl-3JTogIDpVeHEpR-QCm66Kw1NFFbudEsxIcFQvH8M",  "user": {   "id": 1,   "username": "admin",   "email": "admin@example.com",   "role": "admin",   "created_at": "2026-02-24T03:05:01.5165694+08:00"  } } 
+2026/02/24 03:05:22 auth_middleware.go:62: [认证成功] 用户: admin (ID: 1, 角色: admin) - POST /api/json
+2026/02/24 03:05:22 middleware.go:94: [POST] /api/json 127.0.0.1:8425 200 0s Apifox/1.0.0 (https://apifox.com)
+2026/02/24 03:05:22 middleware.go:109:   └─ 请求数据: {"name":"测试","age":20,"email":"test@test.com"}
+2026/02/24 03:05:22 middleware.go:119:   └─ 响应数据: {  "success": true,  "message": "处理成功",  "data": {   "message": "你好，测试！",   "received": {    "name": "测试",    "age": 20,    "email": "test@test.com",    "tags": null,    "created": ""   },   "timestamp": "2026-02-24T03:05:22+08:00"  } } 
+2026/02/24 03:12:03 postjson.go:238: 正在关闭服务器...
+2026/02/24 03:12:03 postjson.go:247: 服务器已关闭
+2026/02/24 03:12:11 postjson.go:225: 日志文件切换到: ./logs/app-2026-02-24.log
+2026/02/24 03:12:32 auth_middleware.go:62: [认证成功] 用户: admin (ID: 1, 角色: admin) - POST /api/json
+2026/02/24 03:12:32 middleware.go:94: [POST] /api/json 127.0.0.1:8853 200 0s Apifox/1.0.0 (https://apifox.com)
+2026/02/24 03:12:32 middleware.go:109:   └─ 请求数据: {"name":"测试","age":20,"email":"test@test.com"}
+2026/02/24 03:12:32 middleware.go:119:   └─ 响应数据: {  "success": true,  "message": "处理成功",  "data": {   "message": "你好，测试！",   "received": {    "name": "测试",    "age": 20,    "email": "test@test.com",    "tags": null,    "created": ""   },   "timestamp": "2026-02-24T03:12:32+08:00"  } } 
+2026/02/24 03:12:36 auth_middleware.go:62: [认证成功] 用户: admin (ID: 1, 角色: admin) - POST /api/json
+2026/02/24 03:12:36 middleware.go:94: [POST] /api/json 127.0.0.1:8853 200 0s Apifox/1.0.0 (https://apifox.com)
+2026/02/24 03:12:36 middleware.go:109:   └─ 请求数据: {"name":"测试","age":20,"email":"test@test.com"}
+2026/02/24 03:12:36 middleware.go:119:   └─ 响应数据: {  "success": true,  "message": "处理成功",  "data": {   "message": "你好，测试！",   "received": {    "name": "测试",    "age": 20,    "email": "test@test.com",    "tags": null,    "created": ""   },   "timestamp": "2026-02-24T03:12:36+08:00"  } } 
+2026/02/24 03:12:41 auth_middleware.go:62: [认证成功] 用户: admin (ID: 1, 角色: admin) - POST /api/json
+2026/02/24 03:12:41 middleware.go:94: [POST] /api/json 127.0.0.1:8853 200 0s Apifox/1.0.0 (https://apifox.com)
+2026/02/24 03:12:41 middleware.go:109:   └─ 请求数据: {"name":"测试","age":20,"email":"test@test.com"}
+2026/02/24 03:12:41 middleware.go:119:   └─ 响应数据: {  "success": true,  "message": "处理成功",  "data": {   "message": "你好，测试！",   "received": {    "name": "测试",    "age": 20,    "email": "test@test.com",    "tags": null,    "created": ""   },   "timestamp": "2026-02-24T03:12:41+08:00"  } } 
+2026/02/24 03:12:54 auth_middleware.go:49: [认证失败] JWT解析错误: token is malformed: could not JSON decode claim: invalid character '\u008c' after object key
+2026/02/24 03:12:54 middleware.go:94: [POST] /api/json 127.0.0.1:8853 401 0s Apifox/1.0.0 (https://apifox.com)
+2026/02/24 03:12:54 middleware.go:109:   └─ 请求数据: {"name":"测试","age":20,"email":"test@test.com"}
+2026/02/24 03:12:54 middleware.go:121:   └─ 响应数据: 验证令牌失败
+2026/02/24 03:13:00 auth_middleware.go:62: [认证成功] 用户: admin (ID: 1, 角色: admin) - POST /api/json
+2026/02/24 03:13:00 middleware.go:94: [POST] /api/json 127.0.0.1:8853 200 0s Apifox/1.0.0 (https://apifox.com)
+2026/02/24 03:13:00 middleware.go:109:   └─ 请求数据: {"name":"测试","age":20,"email":"test@test.com"}
+2026/02/24 03:13:00 middleware.go:119:   └─ 响应数据: {  "success": true,  "message": "处理成功",  "data": {   "message": "你好，测试！",   "received": {    "name": "测试",    "age": 20,    "email": "test@test.com",    "tags": null,    "created": ""   },   "timestamp": "2026-02-24T03:13:00+08:00"  } } 
+2026/02/24 03:14:50 auth_middleware.go:62: [认证成功] 用户: admin (ID: 1, 角色: admin) - POST /api/json
+2026/02/24 03:14:50 middleware.go:94: [POST] /api/json 127.0.0.1:8853 200 0s Apifox/1.0.0 (https://apifox.com)
+2026/02/24 03:14:50 middleware.go:109:   └─ 请求数据: {"name":"测试","age":20,"email":"test@test.com"}
+2026/02/24 03:14:50 middleware.go:119:   └─ 响应数据: {  "success": true,  "message": "处理成功",  "data": {   "message": "你好，测试！",   "received": {    "name": "测试",    "age": 20,    "email": "test@test.com",    "tags": null,    "created": ""   },   "timestamp": "2026-02-24T03:14:50+08:00"  } } 
+2026/02/24 03:14:53 auth_middleware.go:62: [认证成功] 用户: admin (ID: 1, 角色: admin) - POST /api/json
+2026/02/24 03:14:53 middleware.go:94: [POST] /api/json 127.0.0.1:8853 200 0s Apifox/1.0.0 (https://apifox.com)
+2026/02/24 03:14:53 middleware.go:109:   └─ 请求数据: {"name":"测试","age":20,"email":"test@test.com"}
+2026/02/24 03:14:53 middleware.go:119:   └─ 响应数据: {  "success": true,  "message": "处理成功",  "data": {   "message": "你好，测试！",   "received": {    "name": "测试",    "age": 20,    "email": "test@test.com",    "tags": null,    "created": ""   },   "timestamp": "2026-02-24T03:14:53+08:00"  } } 
+2026/02/24 03:14:53 auth_middleware.go:62: [认证成功] 用户: admin (ID: 1, 角色: admin) - POST /api/json
+2026/02/24 03:14:53 middleware.go:94: [POST] /api/json 127.0.0.1:8853 200 0s Apifox/1.0.0 (https://apifox.com)
+2026/02/24 03:14:53 middleware.go:109:   └─ 请求数据: {"name":"测试","age":20,"email":"test@test.com"}
+2026/02/24 03:14:53 middleware.go:119:   └─ 响应数据: {  "success": true,  "message": "处理成功",  "data": {   "message": "你好，测试！",   "received": {    "name": "测试",    "age": 20,    "email": "test@test.com",    "tags": null,    "created": ""   },   "timestamp": "2026-02-24T03:14:53+08:00"  } } 
+2026/02/24 03:14:54 auth_middleware.go:62: [认证成功] 用户: admin (ID: 1, 角色: admin) - POST /api/json
+2026/02/24 03:14:54 middleware.go:94: [POST] /api/json 127.0.0.1:8853 200 0s Apifox/1.0.0 (https://apifox.com)
+2026/02/24 03:14:54 middleware.go:109:   └─ 请求数据: {"name":"测试","age":20,"email":"test@test.com"}
+2026/02/24 03:14:54 middleware.go:119:   └─ 响应数据: {  "success": true,  "message": "处理成功",  "data": {   "message": "你好，测试！",   "received": {    "name": "测试",    "age": 20,    "email": "test@test.com",    "tags": null,    "created": ""   },   "timestamp": "2026-02-24T03:14:54+08:00"  } } 
+2026/02/24 03:14:54 auth_middleware.go:62: [认证成功] 用户: admin (ID: 1, 角色: admin) - POST /api/json
+2026/02/24 03:14:54 middleware.go:94: [POST] /api/json 127.0.0.1:8853 200 0s Apifox/1.0.0 (https://apifox.com)
+2026/02/24 03:14:54 middleware.go:109:   └─ 请求数据: {"name":"测试","age":20,"email":"test@test.com"}
+2026/02/24 03:14:54 middleware.go:119:   └─ 响应数据: {  "success": true,  "message": "处理成功",  "data": {   "message": "你好，测试！",   "received": {    "name": "测试",    "age": 20,    "email": "test@test.com",    "tags": null,    "created": ""   },   "timestamp": "2026-02-24T03:14:54+08:00"  } } 
+2026/02/24 03:33:17 postjson.go:222: 日志文件切换到: ./logs/app-2026-02-24.log
+2026/02/24 03:33:39 auth_middleware.go:62: [认证成功] 用户: admin (ID: 1, 角色: admin) - POST /api/json
+2026/02/24 03:33:39 middleware.go:94: [POST] /api/json 127.0.0.1:2447 200 502.6µs Apifox/1.0.0 (https://apifox.com)
+2026/02/24 03:33:39 middleware.go:109:   └─ 请求数据: {"name":"测试","age":20,"email":"test@test.com"}
+2026/02/24 03:33:39 middleware.go:119:   └─ 响应数据: {  "success": true,  "message": "处理成功",  "data": {   "message": "你好，测试！",   "received": {    "name": "测试",    "age": 20,    "email": "test@test.com",    "tags": null,    "created": ""   },   "timestamp": "2026-02-24T03:33:39+08:00"  } } 
+2026/02/24 03:33:49 middleware.go:94: [POST] //auth/register 127.0.0.1:2447 307 0s Apifox/1.0.0 (https://apifox.com)
+2026/02/24 03:33:49 middleware.go:109:   └─ 请求数据: {"name":"测试","age":20,"email":"test@test.com"}
+2026/02/24 03:33:49 middleware.go:94: [POST] /auth/register 127.0.0.1:2447 400 0s Apifox/1.0.0 (https://apifox.com)
+2026/02/24 03:33:49 middleware.go:109:   └─ 请求数据: {"name":"测试","age":20,"email":"test@test.com"}
+2026/02/24 03:33:49 middleware.go:121:   └─ 响应数据: 用户名、密码和邮箱不能为空
+2026/02/24 04:00:29 postjson.go:183: 正在关闭服务器...
+2026/02/24 04:00:29 postjson.go:192: 服务器已关闭
+2026/02/24 04:02:44 postjson.go:222: 日志文件切换到: ./logs/app-2026-02-24.log
+2026/02/24 04:03:19 auth_middleware.go:79: [认证失败] GET /api/profile - Token 已因重新登录或修改密码失效 (user=admin)
+2026/02/24 04:03:19 middleware.go:94: [GET] /api/profile 127.0.0.1:5494 401 1.5289ms Apifox/1.0.0 (https://apifox.com)
+2026/02/24 04:03:19 middleware.go:109:   └─ 请求数据: 
+2026/02/24 04:03:19 middleware.go:121:   └─ 响应数据: 令牌已失效，请重新登录
+2026/02/24 04:03:25 middleware.go:94: [POST] /auth/login 127.0.0.1:5494 200 39.5568ms Apifox/1.0.0 (https://apifox.com)
+2026/02/24 04:03:25 middleware.go:109:   └─ 请求数据: {
+    "username":"admin",
+    "password":"admin123"
+}
+2026/02/24 04:03:25 middleware.go:119:   └─ 响应数据: {  "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoxLCJ1c2VybmFtZSI6ImFkbWluIiwicm9sZSI6ImFkbWluIiwiaXNzIjoiUG9zdEpzb24iLCJleHAiOjE3NzE4ODQyMDUsImlhdCI6MTc3MTg3NzAwNX0.khExEmcsDzvZLX7QE6Ma4o8tjjSYFezDtvieKlrLQ9U",  "user": {   "id": 1,   "username": "admin",   "email": "admin@example.com",   "role": "admin",   "created_at": "2026-02-24T04:02:44.3528385+08:00"  } } 
+2026/02/24 04:03:43 auth_middleware.go:79: [认证失败] GET /api/profile - Token 已因重新登录或修改密码失效 (user=admin)
+2026/02/24 04:03:43 middleware.go:94: [GET] /api/profile 127.0.0.1:5494 401 0s Apifox/1.0.0 (https://apifox.com)
+2026/02/24 04:03:43 middleware.go:109:   └─ 请求数据: 
+2026/02/24 04:03:43 middleware.go:121:   └─ 响应数据: 令牌已失效，请重新登录
+2026/02/24 04:03:50 auth_middleware.go:79: [认证失败] GET /api/profile - Token 已因重新登录或修改密码失效 (user=admin)
+2026/02/24 04:03:50 middleware.go:94: [GET] /api/profile 127.0.0.1:5494 401 0s Apifox/1.0.0 (https://apifox.com)
+2026/02/24 04:03:50 middleware.go:109:   └─ 请求数据: 
+2026/02/24 04:03:50 middleware.go:121:   └─ 响应数据: 令牌已失效，请重新登录
+2026/02/24 04:04:47 auth_middleware.go:79: [认证失败] GET /api/profile - Token 已因重新登录或修改密码失效 (user=admin)
+2026/02/24 04:04:47 middleware.go:94: [GET] /api/profile 127.0.0.1:5494 401 0s Apifox/1.0.0 (https://apifox.com)
+2026/02/24 04:04:47 middleware.go:109:   └─ 请求数据: 
+2026/02/24 04:04:47 middleware.go:121:   └─ 响应数据: 令牌已失效，请重新登录
+2026/02/24 04:05:07 middleware.go:94: [POST] /auth/login 127.0.0.1:5494 200 40.0342ms Apifox/1.0.0 (https://apifox.com)
+2026/02/24 04:05:07 middleware.go:109:   └─ 请求数据: {
+    "username":"admin",
+    "password":"admin123"
+}
+2026/02/24 04:05:07 middleware.go:119:   └─ 响应数据: {  "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoxLCJ1c2VybmFtZSI6ImFkbWluIiwicm9sZSI6ImFkbWluIiwiaXNzIjoiUG9zdEpzb24iLCJleHAiOjE3NzE4ODQzMDcsImlhdCI6MTc3MTg3NzEwN30.ImR8r92x3_fAUykhbt9_QTnBvdbp5j7B5h02Q1yF4bM",  "user": {   "id": 1,   "username": "admin",   "email": "admin@example.com",   "role": "admin",   "created_at": "2026-02-24T04:02:44.3528385+08:00"  } } 
+2026/02/24 04:05:54 auth_middleware.go:79: [认证失败] GET /api/profile - Token 已因重新登录或修改密码失效 (user=admin)
+2026/02/24 04:05:54 middleware.go:94: [GET] /api/profile 127.0.0.1:5494 401 0s Apifox/1.0.0 (https://apifox.com)
+2026/02/24 04:05:54 middleware.go:109:   └─ 请求数据: 
+2026/02/24 04:05:54 middleware.go:121:   └─ 响应数据: 令牌已失效，请重新登录
+2026/02/24 04:06:14 auth_middleware.go:79: [认证失败] GET /api/profile - Token 已因重新登录或修改密码失效 (user=admin)
+2026/02/24 04:06:14 middleware.go:94: [GET] /api/profile 127.0.0.1:5494 401 0s Apifox/1.0.0 (https://apifox.com)
+2026/02/24 04:06:14 middleware.go:109:   └─ 请求数据: 
+2026/02/24 04:06:14 middleware.go:121:   └─ 响应数据: 令牌已失效，请重新登录
+2026/02/24 04:06:27 postjson.go:183: 正在关闭服务器...
+2026/02/24 04:06:27 postjson.go:192: 服务器已关闭
+2026/02/24 04:06:47 postjson.go:222: 日志文件切换到: ./logs/app-2026-02-24.log
+2026/02/24 04:07:09 auth_middleware.go:79: [认证失败] GET /api/profile - Token 已因重新登录或修改密码失效 (user=admin)
+2026/02/24 04:07:09 middleware.go:94: [GET] /api/profile 127.0.0.1:10059 401 0s Apifox/1.0.0 (https://apifox.com)
+2026/02/24 04:07:09 middleware.go:109:   └─ 请求数据: 
+2026/02/24 04:07:09 middleware.go:121:   └─ 响应数据: 令牌已失效，请重新登录
+2026/02/24 04:07:21 middleware.go:94: [POST] /auth/login 127.0.0.1:10059 200 37.3778ms Apifox/1.0.0 (https://apifox.com)
+2026/02/24 04:07:21 middleware.go:109:   └─ 请求数据: {
+    "username":"admin",
+    "password":"admin123"
+}
+2026/02/24 04:07:21 middleware.go:119:   └─ 响应数据: {  "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoxLCJ1c2VybmFtZSI6ImFkbWluIiwicm9sZSI6ImFkbWluIiwiaXNzIjoiUG9zdEpzb24iLCJleHAiOjE3NzE4ODQ0NDEsImlhdCI6MTc3MTg3NzI0MX0.XC5_xWboawtlk8ss0XyVZNzCGmAEUETTOuc1dTDt-fo",  "user": {   "id": 1,   "username": "admin",   "email": "admin@example.com",   "role": "admin",   "created_at": "2026-02-24T04:06:47.886677+08:00"  } } 
+2026/02/24 04:07:51 auth_middleware.go:79: [认证失败] GET /api/profile - Token 已因重新登录或修改密码失效 (user=admin)
+2026/02/24 04:07:51 middleware.go:94: [GET] /api/profile 127.0.0.1:10059 401 0s Apifox/1.0.0 (https://apifox.com)
+2026/02/24 04:07:51 middleware.go:109:   └─ 请求数据: 
+2026/02/24 04:07:51 middleware.go:121:   └─ 响应数据: 令牌已失效，请重新登录
+2026/02/24 04:08:57 middleware.go:94: [POST] /auth/login 127.0.0.1:10059 200 37.4116ms Apifox/1.0.0 (https://apifox.com)
+2026/02/24 04:08:57 middleware.go:109:   └─ 请求数据: {
+    "username":"admin",
+    "password":"admin123"
+}
+2026/02/24 04:08:57 middleware.go:119:   └─ 响应数据: {  "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoxLCJ1c2VybmFtZSI6ImFkbWluIiwicm9sZSI6ImFkbWluIiwiaXNzIjoiUG9zdEpzb24iLCJleHAiOjE3NzE4ODQ1MzcsImlhdCI6MTc3MTg3NzMzN30.nC9yCPAvI8JDlzpZZv6ekAPvWPpBSZOWAHHN5jwLRiA",  "user": {   "id": 1,   "username": "admin",   "email": "admin@example.com",   "role": "admin",   "created_at": "2026-02-24T04:06:47.886677+08:00"  } } 
+2026/02/24 04:09:31 auth_middleware.go:79: [认证失败] GET /api/json - Token 已因重新登录或修改密码失效 (user=admin)
+2026/02/24 04:09:31 middleware.go:94: [GET] /api/json 127.0.0.1:10059 401 0s Apifox/1.0.0 (https://apifox.com)
+2026/02/24 04:09:31 middleware.go:109:   └─ 请求数据: 
+2026/02/24 04:09:31 middleware.go:121:   └─ 响应数据: 令牌已失效，请重新登录
+2026/02/24 04:09:36 auth_middleware.go:79: [认证失败] GET /api/json - Token 已因重新登录或修改密码失效 (user=admin)
+2026/02/24 04:09:36 middleware.go:94: [GET] /api/json 127.0.0.1:10059 401 0s Apifox/1.0.0 (https://apifox.com)
+2026/02/24 04:09:36 middleware.go:109:   └─ 请求数据: 
+2026/02/24 04:09:36 middleware.go:121:   └─ 响应数据: 令牌已失效，请重新登录
+2026/02/24 04:09:48 auth_middleware.go:79: [认证失败] GET /api/json - Token 已因重新登录或修改密码失效 (user=admin)
+2026/02/24 04:09:48 middleware.go:94: [GET] /api/json 127.0.0.1:10059 401 0s Apifox/1.0.0 (https://apifox.com)
+2026/02/24 04:09:48 middleware.go:109:   └─ 请求数据: 
+2026/02/24 04:09:48 middleware.go:121:   └─ 响应数据: 令牌已失效，请重新登录
+2026/02/24 04:09:52 middleware.go:94: [POST] /auth/login 127.0.0.1:10059 200 37.175ms Apifox/1.0.0 (https://apifox.com)
+2026/02/24 04:09:52 middleware.go:109:   └─ 请求数据: {
+    "username":"admin",
+    "password":"admin123"
+}
+2026/02/24 04:09:52 middleware.go:119:   └─ 响应数据: {  "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoxLCJ1c2VybmFtZSI6ImFkbWluIiwicm9sZSI6ImFkbWluIiwiaXNzIjoiUG9zdEpzb24iLCJleHAiOjE3NzE4ODQ1OTIsImlhdCI6MTc3MTg3NzM5Mn0.AfxhpKCp-xqnR4z7SeaZxDH6SwLHbGpaQgd0NITY6xc",  "user": {   "id": 1,   "username": "admin",   "email": "admin@example.com",   "role": "admin",   "created_at": "2026-02-24T04:06:47.886677+08:00"  } } 
+2026/02/24 04:09:59 auth_middleware.go:79: [认证失败] GET /api/json - Token 已因重新登录或修改密码失效 (user=admin)
+2026/02/24 04:09:59 middleware.go:94: [GET] /api/json 127.0.0.1:10059 401 0s Apifox/1.0.0 (https://apifox.com)
+2026/02/24 04:09:59 middleware.go:109:   └─ 请求数据: 
+2026/02/24 04:09:59 middleware.go:121:   └─ 响应数据: 令牌已失效，请重新登录
+2026/02/24 04:10:10 middleware.go:94: [POST] /auth/login 127.0.0.1:10059 200 37.68ms Apifox/1.0.0 (https://apifox.com)
+2026/02/24 04:10:10 middleware.go:109:   └─ 请求数据: {
+    "username":"admin",
+    "password":"admin123"
+}
+2026/02/24 04:10:10 middleware.go:119:   └─ 响应数据: {  "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoxLCJ1c2VybmFtZSI6ImFkbWluIiwicm9sZSI6ImFkbWluIiwiaXNzIjoiUG9zdEpzb24iLCJleHAiOjE3NzE4ODQ2MTAsImlhdCI6MTc3MTg3NzQxMH0.wwCve97IVO7us6uNuUwF_UT6LpNOXyU6sI6UBlX0edQ",  "user": {   "id": 1,   "username": "admin",   "email": "admin@example.com",   "role": "admin",   "created_at": "2026-02-24T04:06:47.886677+08:00"  } } 
+2026/02/24 04:10:28 auth_middleware.go:79: [认证失败] GET /api/json - Token 已因重新登录或修改密码失效 (user=admin)
+2026/02/24 04:10:28 middleware.go:94: [GET] /api/json 127.0.0.1:10059 401 0s Apifox/1.0.0 (https://apifox.com)
+2026/02/24 04:10:28 middleware.go:109:   └─ 请求数据: 
+2026/02/24 04:10:28 middleware.go:121:   └─ 响应数据: 令牌已失效，请重新登录
+2026/02/24 04:11:33 middleware.go:94: [POST] /auth/login 127.0.0.1:10059 200 45.1272ms Apifox/1.0.0 (https://apifox.com)
+2026/02/24 04:11:33 middleware.go:109:   └─ 请求数据: {
+    "username":"admin",
+    "password":"admin123"
+}
+2026/02/24 04:11:33 middleware.go:119:   └─ 响应数据: {  "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoxLCJ1c2VybmFtZSI6ImFkbWluIiwicm9sZSI6ImFkbWluIiwiaXNzIjoiUG9zdEpzb24iLCJleHAiOjE3NzE4ODQ2OTMsImlhdCI6MTc3MTg3NzQ5M30.cu5doO-P5YUsN11BBn6XszOhW_0kstj0_hgD1xNNAes",  "user": {   "id": 1,   "username": "admin",   "email": "admin@example.com",   "role": "admin",   "created_at": "2026-02-24T04:06:47.886677+08:00"  } } 
+2026/02/24 04:11:42 auth_middleware.go:79: [认证失败] GET /api/json - Token 已因重新登录或修改密码失效 (user=admin)
+2026/02/24 04:11:42 middleware.go:94: [GET] /api/json 127.0.0.1:10059 401 0s Apifox/1.0.0 (https://apifox.com)
+2026/02/24 04:11:42 middleware.go:109:   └─ 请求数据: 
+2026/02/24 04:11:42 middleware.go:121:   └─ 响应数据: 令牌已失效，请重新登录
+2026/02/24 04:11:53 auth_middleware.go:79: [认证失败] POST /api/json - Token 已因重新登录或修改密码失效 (user=admin)
+2026/02/24 04:11:53 middleware.go:94: [POST] /api/json 127.0.0.1:10059 401 0s Apifox/1.0.0 (https://apifox.com)
+2026/02/24 04:11:53 middleware.go:109:   └─ 请求数据: {"name":"测试","age":20,"email":"test@test.com"}
+2026/02/24 04:11:53 middleware.go:121:   └─ 响应数据: 令牌已失效，请重新登录
+2026/02/24 04:12:41 postjson.go:222: 日志文件切换到: ./logs/app-2026-02-24.log
+2026/02/24 04:13:13 middleware.go:94: [POST] /auth/login 127.0.0.1:12590 200 40.1528ms Apifox/1.0.0 (https://apifox.com)
+2026/02/24 04:13:13 middleware.go:109:   └─ 请求数据: {
+    "username":"admin",
+    "password":"admin123"
+}
+2026/02/24 04:13:13 middleware.go:119:   └─ 响应数据: {  "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoxLCJ1c2VybmFtZSI6ImFkbWluIiwicm9sZSI6ImFkbWluIiwiaXNzIjoiUG9zdEpzb24iLCJleHAiOjE3NzE4ODQ3OTMsImlhdCI6MTc3MTg3NzU5M30.5po3sDPeQjwnJrXYlstGaMcJX2DJCGR80-ErJUsnzMQ",  "user": {   "id": 1,   "username": "admin",   "email": "admin@example.com",   "role": "admin",   "created_at": "2026-02-24T04:12:41.9827068+08:00"  } } 
+2026/02/24 04:13:52 auth_middleware.go:79: [认证失败] GET /api/profile - Token 已因重新登录或修改密码失效 (user=admin)
+2026/02/24 04:13:52 middleware.go:94: [GET] /api/profile 127.0.0.1:12590 401 0s Apifox/1.0.0 (https://apifox.com)
+2026/02/24 04:13:52 middleware.go:109:   └─ 请求数据: 
+2026/02/24 04:13:52 middleware.go:121:   └─ 响应数据: 令牌已失效，请重新登录
+2026/02/24 04:14:21 auth_middleware.go:79: [认证失败] GET /api/setting - Token 已因重新登录或修改密码失效 (user=admin)
+2026/02/24 04:14:21 middleware.go:94: [GET] /api/setting 127.0.0.1:12590 401 0s Apifox/1.0.0 (https://apifox.com)
+2026/02/24 04:14:21 middleware.go:109:   └─ 请求数据: 
+2026/02/24 04:14:21 middleware.go:121:   └─ 响应数据: 令牌已失效，请重新登录
+2026/02/24 04:14:36 auth_middleware.go:79: [认证失败] PUT /api/setting - Token 已因重新登录或修改密码失效 (user=admin)
+2026/02/24 04:14:36 middleware.go:94: [PUT] /api/setting 127.0.0.1:12590 401 0s Apifox/1.0.0 (https://apifox.com)
+2026/02/24 04:14:36 middleware.go:109:   └─ 请求数据: {"password":"newpass123"}
+2026/02/24 04:14:36 middleware.go:121:   └─ 响应数据: 令牌已失效，请重新登录
+2026/02/24 04:14:39 auth_middleware.go:79: [认证失败] POST /api/setting - Token 已因重新登录或修改密码失效 (user=admin)
+2026/02/24 04:14:39 middleware.go:94: [POST] /api/setting 127.0.0.1:12590 401 0s Apifox/1.0.0 (https://apifox.com)
+2026/02/24 04:14:39 middleware.go:109:   └─ 请求数据: {"password":"newpass123"}
+2026/02/24 04:14:39 middleware.go:121:   └─ 响应数据: 令牌已失效，请重新登录
+2026/02/24 04:15:10 auth_middleware.go:79: [认证失败] POST /api/profile - Token 已因重新登录或修改密码失效 (user=admin)
+2026/02/24 04:15:10 middleware.go:94: [POST] /api/profile 127.0.0.1:12590 401 0s Apifox/1.0.0 (https://apifox.com)
+2026/02/24 04:15:10 middleware.go:109:   └─ 请求数据: {"password":"newpass123"}
+2026/02/24 04:15:10 middleware.go:121:   └─ 响应数据: 令牌已失效，请重新登录
+2026/02/24 04:15:26 middleware.go:94: [POST] /auth/login 127.0.0.1:12590 200 65.502ms Apifox/1.0.0 (https://apifox.com)
+2026/02/24 04:15:26 middleware.go:109:   └─ 请求数据: {
+    "username":"admin",
+    "password":"admin123"
+}
+2026/02/24 04:15:26 middleware.go:119:   └─ 响应数据: {  "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoxLCJ1c2VybmFtZSI6ImFkbWluIiwicm9sZSI6ImFkbWluIiwiaXNzIjoiUG9zdEpzb24iLCJleHAiOjE3NzE4ODQ5MjYsImlhdCI6MTc3MTg3NzcyNn0.YhZfyjUUe4OTbZXf-7IUkh9Hb0dQ5iDABrk2DJG83uI",  "user": {   "id": 1,   "username": "admin",   "email": "admin@example.com",   "role": "admin",   "created_at": "2026-02-24T04:12:41.9827068+08:00"  } } 
+2026/02/24 04:15:45 auth_middleware.go:79: [认证失败] POST /api/profile - Token 已因重新登录或修改密码失效 (user=admin)
+2026/02/24 04:15:45 middleware.go:94: [POST] /api/profile 127.0.0.1:12590 401 0s Apifox/1.0.0 (https://apifox.com)
+2026/02/24 04:15:45 middleware.go:109:   └─ 请求数据: {"password":"newpass123"}
+2026/02/24 04:15:45 middleware.go:121:   └─ 响应数据: 令牌已失效，请重新登录
+2026/02/24 04:17:56 postjson.go:222: 日志文件切换到: ./logs/app-2026-02-24.log
+2026/02/24 04:18:02 middleware.go:94: [POST] /auth/login 127.0.0.1:3417 200 40.618ms Apifox/1.0.0 (https://apifox.com)
+2026/02/24 04:18:02 middleware.go:109:   └─ 请求数据: {
+    "username":"admin",
+    "password":"admin123"
+}
+2026/02/24 04:18:02 middleware.go:119:   └─ 响应数据: {  "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoxLCJ1c2VybmFtZSI6ImFkbWluIiwicm9sZSI6ImFkbWluIiwiaXNzIjoiUG9zdEpzb24iLCJleHAiOjE3NzE4ODUwODIsImlhdCI6MTc3MTg3Nzg4Mn0.sVkx8aYScf4OztfKVT7F_feg4vGdn2erXOqrEFNlgsY",  "user": {   "id": 1,   "username": "admin",   "email": "admin@example.com",   "role": "admin",   "created_at": "2026-02-24T04:17:56.4410834+08:00"  } } 
+2026/02/24 04:18:39 auth_middleware.go:132: [认证失败] GET /api/profile - Token 已因重新登录或修改密码失效 (user=admin)
+2026/02/24 04:18:39 middleware.go:94: [GET] /api/profile 127.0.0.1:3417 401 0s Apifox/1.0.0 (https://apifox.com)
+2026/02/24 04:18:39 middleware.go:109:   └─ 请求数据: 
+2026/02/24 04:18:39 middleware.go:121:   └─ 响应数据: 令牌已失效，请重新登录
+2026/02/24 04:18:47 auth_middleware.go:132: [认证失败] POST /api/profile - Token 已因重新登录或修改密码失效 (user=admin)
+2026/02/24 04:18:47 middleware.go:94: [POST] /api/profile 127.0.0.1:3417 401 0s Apifox/1.0.0 (https://apifox.com)
+2026/02/24 04:18:47 middleware.go:109:   └─ 请求数据: {"password":"newpass123"}
+2026/02/24 04:18:47 middleware.go:121:   └─ 响应数据: 令牌已失效，请重新登录
+2026/02/24 04:20:30 postjson.go:183: 正在关闭服务器...
+2026/02/24 04:20:30 postjson.go:192: 服务器已关闭
+2026/02/24 04:20:36 postjson.go:222: 日志文件切换到: ./logs/app-2026-02-24.log
+2026/02/24 04:20:45 middleware.go:94: [POST] /auth/login 127.0.0.1:7401 200 38.9593ms Apifox/1.0.0 (https://apifox.com)
+2026/02/24 04:20:45 middleware.go:109:   └─ 请求数据: {
+    "username":"admin",
+    "password":"admin123"
+}
+2026/02/24 04:20:45 middleware.go:119:   └─ 响应数据: {  "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoxLCJ1c2VybmFtZSI6ImFkbWluIiwicm9sZSI6ImFkbWluIiwidG9rZW5fdmVyc2lvbiI6MSwiaXNzIjoiUG9zdEpzb24iLCJleHAiOjE3NzE4ODUyNDUsImlhdCI6MTc3MTg3ODA0NX0.hoZp8e3SKYt-TydEASLZB1WmzwcC5Lj2L6woHzqUnuo",  "user": {   "id": 1,   "username": "admin",   "email": "admin@example.com",   "role": "admin",   "created_at": "2026-02-24T04:20:36.0230595+08:00"  } } 
+2026/02/24 04:21:19 auth_middleware.go:133: [认证成功] 用户: admin (ID: 1, 角色: admin) - POST /api/profile
+2026/02/24 04:21:19 middleware.go:94: [POST] /api/profile 127.0.0.1:7401 200 0s Apifox/1.0.0 (https://apifox.com)
+2026/02/24 04:21:19 middleware.go:109:   └─ 请求数据: {"password":"newpass123"}
+2026/02/24 04:21:19 middleware.go:119:   └─ 响应数据: {  "expires": 1771885245,  "role": "admin",  "user_id": 1,  "username": "admin" } 
+2026/02/24 04:21:30 middleware.go:94: [POST] /auth/login 127.0.0.1:7401 200 38.949ms Apifox/1.0.0 (https://apifox.com)
+2026/02/24 04:21:30 middleware.go:109:   └─ 请求数据: {
+    "username":"admin",
+    "password":"admin123"
+}
+2026/02/24 04:21:30 middleware.go:119:   └─ 响应数据: {  "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoxLCJ1c2VybmFtZSI6ImFkbWluIiwicm9sZSI6ImFkbWluIiwidG9rZW5fdmVyc2lvbiI6MiwiaXNzIjoiUG9zdEpzb24iLCJleHAiOjE3NzE4ODUyOTAsImlhdCI6MTc3MTg3ODA5MH0.EckHpSEM2Nm4ucZwfvPPBMX6wAI9kGa1XcOl6pBB3-0",  "user": {   "id": 1,   "username": "admin",   "email": "admin@example.com",   "role": "admin",   "created_at": "2026-02-24T04:20:36.0230595+08:00"  } } 
+2026/02/24 04:21:58 auth_middleware.go:127: [认证失败] POST /api/profile - Token 已因重新登录或修改密码失效 (user=admin)
+2026/02/24 04:21:58 middleware.go:94: [POST] /api/profile 127.0.0.1:7401 401 0s Apifox/1.0.0 (https://apifox.com)
+2026/02/24 04:21:58 middleware.go:109:   └─ 请求数据: {"password":"newpass123"}
+2026/02/24 04:21:58 middleware.go:121:   └─ 响应数据: 令牌已失效，请重新登录
+2026/02/24 04:22:17 auth_middleware.go:133: [认证成功] 用户: admin (ID: 1, 角色: admin) - POST /api/profile
+2026/02/24 04:22:17 middleware.go:94: [POST] /api/profile 127.0.0.1:7401 200 1.5319ms Apifox/1.0.0 (https://apifox.com)
+2026/02/24 04:22:17 middleware.go:109:   └─ 请求数据: {"password":"newpass123"}
+2026/02/24 04:22:17 middleware.go:119:   └─ 响应数据: {  "expires": 1771885290,  "role": "admin",  "user_id": 1,  "username": "admin" } 
+2026/02/24 04:22:36 auth_middleware.go:133: [认证成功] 用户: admin (ID: 1, 角色: admin) - POST /api/settings
+2026/02/24 04:22:36 middleware.go:94: [POST] /api/settings 127.0.0.1:7401 405 0s Apifox/1.0.0 (https://apifox.com)
+2026/02/24 04:22:36 middleware.go:109:   └─ 请求数据: {"password":"newpass123"}
+2026/02/24 04:22:36 middleware.go:121:   └─ 响应数据: 只接受PUT或PATCH请求
+2026/02/24 04:23:03 auth_middleware.go:133: [认证成功] 用户: admin (ID: 1, 角色: admin) - PUT /api/settings
+2026/02/24 04:23:03 middleware.go:94: [PUT] /api/settings 127.0.0.1:7401 200 38.3228ms Apifox/1.0.0 (https://apifox.com)
+2026/02/24 04:23:03 middleware.go:109:   └─ 请求数据: {"password":"newpass123"}
+2026/02/24 04:23:03 middleware.go:119:   └─ 响应数据: {  "message": "更新成功",  "user": {   "id": 1,   "username": "admin",   "email": "admin@example.com",   "role": "admin",   "created_at": "2026-02-24T04:20:36.0230595+08:00"  } } 
+2026/02/24 04:23:49 auth_middleware.go:127: [认证失败] GET /api/profile - Token 已因重新登录或修改密码失效 (user=admin)
+2026/02/24 04:23:49 middleware.go:94: [GET] /api/profile 127.0.0.1:7401 401 0s Apifox/1.0.0 (https://apifox.com)
+2026/02/24 04:23:49 middleware.go:109:   └─ 请求数据: 
+2026/02/24 04:23:49 middleware.go:121:   └─ 响应数据: 令牌已失效，请重新登录
+2026/02/24 04:24:01 auth_middleware.go:127: [认证失败] GET /api/profile - Token 已因重新登录或修改密码失效 (user=admin)
+2026/02/24 04:24:01 middleware.go:94: [GET] /api/profile 127.0.0.1:7401 401 0s Apifox/1.0.0 (https://apifox.com)
+2026/02/24 04:24:01 middleware.go:109:   └─ 请求数据: 
+2026/02/24 04:24:01 middleware.go:121:   └─ 响应数据: 令牌已失效，请重新登录
+2026/02/24 04:24:08 middleware.go:94: [POST] /auth/login 127.0.0.1:7401 200 38.3841ms Apifox/1.0.0 (https://apifox.com)
+2026/02/24 04:24:08 middleware.go:109:   └─ 请求数据: {
+    "username":"admin",
+    "password":"newpass123"
+}
+2026/02/24 04:24:08 middleware.go:119:   └─ 响应数据: {  "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoxLCJ1c2VybmFtZSI6ImFkbWluIiwicm9sZSI6ImFkbWluIiwidG9rZW5fdmVyc2lvbiI6NCwiaXNzIjoiUG9zdEpzb24iLCJleHAiOjE3NzE4ODU0NDgsImlhdCI6MTc3MTg3ODI0OH0.im5wzIOImG46mYBCe5ElOU4ZBwqOMcLeJY--jYdjE_w",  "user": {   "id": 1,   "username": "admin",   "email": "admin@example.com",   "role": "admin",   "created_at": "2026-02-24T04:20:36.0230595+08:00"  } } 
+2026/02/24 04:24:44 auth_middleware.go:133: [认证成功] 用户: admin (ID: 1, 角色: admin) - GET /api/profile
+2026/02/24 04:24:44 middleware.go:94: [GET] /api/profile 127.0.0.1:7401 200 0s Apifox/1.0.0 (https://apifox.com)
+2026/02/24 05:00:42 postjson.go:183: 正在关闭服务器...
+2026/02/24 05:00:42 postjson.go:192: 服务器已关闭
+2026/02/24 05:03:57 postjson.go:222: 日志文件切换到: ./logs/app-2026-02-24.log
+2026/02/24 05:04:21 middleware.go:94: [POST] /auth/login 127.0.0.1:3477 401 36.9253ms Apifox/1.0.0 (https://apifox.com)
+2026/02/24 05:04:21 middleware.go:109:   └─ 请求数据: {
+    "username":"admin",
+    "password":"newpass123"
+}
+2026/02/24 05:04:21 middleware.go:121:   └─ 响应数据: 密码错误
+2026/02/24 05:04:32 middleware.go:94: [POST] /auth/login 127.0.0.1:3477 200 37.6575ms Apifox/1.0.0 (https://apifox.com)
+2026/02/24 05:04:32 middleware.go:109:   └─ 请求数据: {
+    "username":"admin",
+    "password":"admin123"
+}
+2026/02/24 05:04:32 middleware.go:119:   └─ 响应数据: {  "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoxLCJ1c2VybmFtZSI6ImFkbWluIiwicm9sZSI6ImFkbWluIiwidG9rZW5fdmVyc2lvbiI6MSwiaXNzIjoiUG9zdEpzb24iLCJleHAiOjE3NzE4ODc4NzIsImlhdCI6MTc3MTg4MDY3Mn0.i-ozIWH5PZzmx-0vvgaEtma_3HcVEkTHGBxChEXa6ts",  "user": {   "id": 1,   "username": "admin",   "email": "admin@example.com",   "role": "admin",   "created_at": "2026-02-24T05:03:57.3426095+08:00"  } } 
+2026/02/24 05:04:52 auth_middleware.go:133: [认证成功] 用户: admin (ID: 1, 角色: admin) - GET /api/profile
+2026/02/24 05:04:52 middleware.go:94: [GET] /api/profile 127.0.0.1:3477 200 797.7µs Apifox/1.0.0 (https://apifox.com)
+2026/02/24 05:05:09 middleware.go:94: [POST] /auth/login 127.0.0.1:3477 200 38.0833ms Apifox/1.0.0 (https://apifox.com)
+2026/02/24 05:05:09 middleware.go:109:   └─ 请求数据: {
+    "username":"admin",
+    "password":"admin123"
+}
+2026/02/24 05:05:09 middleware.go:119:   └─ 响应数据: {  "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoxLCJ1c2VybmFtZSI6ImFkbWluIiwicm9sZSI6ImFkbWluIiwidG9rZW5fdmVyc2lvbiI6MiwiaXNzIjoiUG9zdEpzb24iLCJleHAiOjE3NzE4ODc5MDksImlhdCI6MTc3MTg4MDcwOX0.x4gud1u-GdLgumVCC8BhbF7sOL95iNEegG7Ck2S2_-4",  "user": {   "id": 1,   "username": "admin",   "email": "admin@example.com",   "role": "admin",   "created_at": "2026-02-24T05:03:57.3426095+08:00"  } } 
+2026/02/24 05:05:30 auth_middleware.go:127: [认证失败] GET /api/profile - Token 已因重新登录或修改密码失效 (user=admin)
+2026/02/24 05:05:30 middleware.go:94: [GET] /api/profile 127.0.0.1:3477 401 1.5266ms Apifox/1.0.0 (https://apifox.com)
+2026/02/24 05:05:30 middleware.go:109:   └─ 请求数据: 
+2026/02/24 05:05:30 middleware.go:121:   └─ 响应数据: 令牌已失效，请重新登录
+2026/02/24 05:05:42 auth_middleware.go:133: [认证成功] 用户: admin (ID: 1, 角色: admin) - GET /api/profile
+2026/02/24 05:05:42 middleware.go:94: [GET] /api/profile 127.0.0.1:3477 200 0s Apifox/1.0.0 (https://apifox.com)
+2026/02/24 05:06:51 auth_middleware.go:133: [认证成功] 用户: admin (ID: 1, 角色: admin) - PUT /api/settings
+2026/02/24 05:06:51 middleware.go:94: [PUT] /api/settings 127.0.0.1:3477 200 39.7733ms Apifox/1.0.0 (https://apifox.com)
+2026/02/24 05:06:51 middleware.go:109:   └─ 请求数据: {"password":"newpass123"}
+2026/02/24 05:06:51 middleware.go:119:   └─ 响应数据: {  "message": "更新成功",  "user": {   "id": 1,   "username": "admin",   "email": "admin@example.com",   "role": "admin",   "created_at": "2026-02-24T05:03:57.3426095+08:00"  } } 
+2026/02/24 05:07:35 auth_middleware.go:127: [认证失败] GET /api/profile - Token 已因重新登录或修改密码失效 (user=admin)
+2026/02/24 05:07:35 middleware.go:94: [GET] /api/profile 127.0.0.1:3477 401 0s Apifox/1.0.0 (https://apifox.com)
+2026/02/24 05:07:35 middleware.go:109:   └─ 请求数据: 
+2026/02/24 05:07:35 middleware.go:121:   └─ 响应数据: 令牌已失效，请重新登录
+2026/02/24 05:07:40 middleware.go:94: [POST] /auth/login 127.0.0.1:3477 401 38.858ms Apifox/1.0.0 (https://apifox.com)
+2026/02/24 05:07:40 middleware.go:109:   └─ 请求数据: {
+    "username":"admin",
+    "password":"admin123"
+}
+2026/02/24 05:07:40 middleware.go:121:   └─ 响应数据: 密码错误
+2026/02/24 05:07:47 middleware.go:94: [POST] /auth/login 127.0.0.1:3477 200 38.3159ms Apifox/1.0.0 (https://apifox.com)
+2026/02/24 05:07:47 middleware.go:109:   └─ 请求数据: {
+    "username":"admin",
+    "password":"newpass123"
+}
+2026/02/24 05:07:47 middleware.go:119:   └─ 响应数据: {  "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoxLCJ1c2VybmFtZSI6ImFkbWluIiwicm9sZSI6ImFkbWluIiwidG9rZW5fdmVyc2lvbiI6NCwiaXNzIjoiUG9zdEpzb24iLCJleHAiOjE3NzE4ODgwNjcsImlhdCI6MTc3MTg4MDg2N30.qqyrzS7RPr1xkHzmGFHWpEJ5g7s1INDfFeO5G00XdlQ",  "user": {   "id": 1,   "username": "admin",   "email": "admin@example.com",   "role": "admin",   "created_at": "2026-02-24T05:03:57.3426095+08:00"  } } 
+2026/02/24 05:08:03 auth_middleware.go:133: [认证成功] 用户: admin (ID: 1, 角色: admin) - GET /api/profile
+2026/02/24 05:08:03 middleware.go:94: [GET] /api/profile 127.0.0.1:3477 200 5.0195ms Apifox/1.0.0 (https://apifox.com)
+2026/02/24 05:18:26 postjson.go:222: 日志文件切换到: ./logs/app-2026-02-24.log
+2026/02/24 05:18:26 postjson.go:104: 服务器启动失败: listen tcp :8443: bind: Only one usage of each socket address (protocol/network address/port) is normally permitted.
+2026/02/24 05:19:02 postjson.go:222: 日志文件切换到: ./logs/app-2026-02-24.log
+2026/02/24 05:19:02 postjson.go:104: 服务器启动失败: listen tcp :8443: bind: Only one usage of each socket address (protocol/network address/port) is normally permitted.
+2026/02/24 05:19:12 postjson.go:183: 正在关闭服务器...
+2026/02/24 05:19:12 postjson.go:192: 服务器已关闭
+2026/02/24 05:19:19 postjson.go:222: 日志文件切换到: ./logs/app-2026-02-24.log
+2026/02/24 05:19:41 middleware.go:94: [GET] /health [::1]:14467 200 0s Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36 Edg/145.0.0.0
+2026/02/24 05:19:41 middleware.go:94: [GET] /favicon.ico [::1]:14467 404 0s Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36 Edg/145.0.0.0
+2026/02/24 05:19:41 middleware.go:109:   └─ 请求数据: 
+2026/02/24 05:19:41 middleware.go:121:   └─ 响应数据: 404 page not found
+2026/02/24 05:20:42 middleware.go:94: [POST] /auth/login 127.0.0.1:12637 401 37.9489ms Apifox/1.0.0 (https://apifox.com)
+2026/02/24 05:20:42 middleware.go:109:   └─ 请求数据: {
+    "username":"admin",
+    "password":"newpass123"
+}
+2026/02/24 05:20:42 middleware.go:121:   └─ 响应数据: 密码错误
+2026/02/24 05:20:51 middleware.go:94: [POST] /auth/login 127.0.0.1:12637 200 38.8972ms Apifox/1.0.0 (https://apifox.com)
+2026/02/24 05:20:51 middleware.go:109:   └─ 请求数据: {
+    "username":"admin",
+    "password":"admin123"
+}
+2026/02/24 05:20:51 middleware.go:119:   └─ 响应数据: {  "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoxLCJ1c2VybmFtZSI6ImFkbWluIiwicm9sZSI6ImFkbWluIiwidG9rZW5fdmVyc2lvbiI6MSwiaXNzIjoiUG9zdEpzb24iLCJleHAiOjE3NzE4ODg4NTEsImlhdCI6MTc3MTg4MTY1MX0.gE5aMqQ2HxKBSNN44Pq8UiawZfSc0YdJcJmzPytxU6U",  "user": {   "id": 1,   "username": "admin",   "email": "admin@example.com",   "role": "admin",   "created_at": "2026-02-24T05:19:19.7668465+08:00"  } } 
+2026/02/24 05:21:02 auth_middleware.go:84: [认证成功] 用户: admin (ID: 1, 角色: admin) - GET /api/profile
+2026/02/24 05:21:02 middleware.go:94: [GET] /api/profile 127.0.0.1:12637 200 0s Apifox/1.0.0 (https://apifox.com)
+2026/02/24 05:21:08 auth_middleware.go:84: [认证成功] 用户: admin (ID: 1, 角色: admin) - GET /api/profile
+2026/02/24 05:21:08 middleware.go:94: [GET] /api/profile 127.0.0.1:12637 200 0s Apifox/1.0.0 (https://apifox.com)
+2026/02/24 05:21:10 auth_middleware.go:84: [认证成功] 用户: admin (ID: 1, 角色: admin) - GET /api/profile
+2026/02/24 05:21:10 middleware.go:94: [GET] /api/profile 127.0.0.1:12637 200 0s Apifox/1.0.0 (https://apifox.com)
+2026/02/24 05:21:21 auth_middleware.go:84: [认证成功] 用户: admin (ID: 1, 角色: admin) - GET /api/json
+2026/02/24 05:21:21 middleware.go:94: [GET] /api/json 127.0.0.1:12637 405 0s Apifox/1.0.0 (https://apifox.com)
+2026/02/24 05:21:21 middleware.go:109:   └─ 请求数据: 
+2026/02/24 05:21:21 middleware.go:119:   └─ 响应数据: {  "success": false,  "error": {   "code": "METHOD_NOT_ALLOWED",   "message": "只接受 POST 请求"  } } 
+2026/02/24 05:21:25 auth_middleware.go:84: [认证成功] 用户: admin (ID: 1, 角色: admin) - POST /api/json
+2026/02/24 05:21:25 middleware.go:94: [POST] /api/json 127.0.0.1:12637 400 0s Apifox/1.0.0 (https://apifox.com)
+2026/02/24 05:21:25 middleware.go:109:   └─ 请求数据: {"password":"newpass123"}
+2026/02/24 05:21:25 middleware.go:119:   └─ 响应数据: {  "success": false,  "error": {   "code": "JSON_PARSE_ERROR",   "message": "JSON 解析失败",   "details": "json: unknown field \"password\""  } } 
+2026/02/24 05:21:34 middleware.go:94: [POST] /auth/login 127.0.0.1:12637 200 39.1539ms Apifox/1.0.0 (https://apifox.com)
+2026/02/24 05:21:34 middleware.go:109:   └─ 请求数据: {
+    "username":"admin",
+    "password":"admin123"
+}
+2026/02/24 05:21:34 middleware.go:119:   └─ 响应数据: {  "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoxLCJ1c2VybmFtZSI6ImFkbWluIiwicm9sZSI6ImFkbWluIiwidG9rZW5fdmVyc2lvbiI6MiwiaXNzIjoiUG9zdEpzb24iLCJleHAiOjE3NzE4ODg4OTQsImlhdCI6MTc3MTg4MTY5NH0.CMFiHCHR_TztiN9n5zFXnXqELkXiBEcEF9ktPxNhDHI",  "user": {   "id": 1,   "username": "admin",   "email": "admin@example.com",   "role": "admin",   "created_at": "2026-02-24T05:19:19.7668465+08:00"  } } 
+2026/02/24 05:21:37 auth_middleware.go:78: [认证失败] POST /api/json - Token 已因重新登录或修改密码失效 (user=admin)
+2026/02/24 05:21:37 middleware.go:94: [POST] /api/json 127.0.0.1:12637 401 0s Apifox/1.0.0 (https://apifox.com)
+2026/02/24 05:21:37 middleware.go:109:   └─ 请求数据: {"password":"newpass123"}
+2026/02/24 05:21:37 middleware.go:121:   └─ 响应数据: 令牌已失效，请重新登录
+2026/02/24 05:22:03 middleware.go:94: [POST] /auth/login 127.0.0.1:12637 200 38.8145ms Apifox/1.0.0 (https://apifox.com)
+2026/02/24 05:22:03 middleware.go:109:   └─ 请求数据: {
+    "username":"admin",
+    "password":"admin123"
+}
+2026/02/24 05:22:03 middleware.go:119:   └─ 响应数据: {  "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoxLCJ1c2VybmFtZSI6ImFkbWluIiwicm9sZSI6ImFkbWluIiwidG9rZW5fdmVyc2lvbiI6MywiaXNzIjoiUG9zdEpzb24iLCJleHAiOjE3NzE4ODg5MjMsImlhdCI6MTc3MTg4MTcyM30.wvnX_MYLM4iTcNURg2vhnUim7b6NqHhHAYZxqA5f9rM",  "user": {   "id": 1,   "username": "admin",   "email": "admin@example.com",   "role": "admin",   "created_at": "2026-02-24T05:19:19.7668465+08:00"  } } 
+2026/02/24 05:22:15 auth_middleware.go:84: [认证成功] 用户: admin (ID: 1, 角色: admin) - POST /api/json
+2026/02/24 05:22:15 middleware.go:94: [POST] /api/json 127.0.0.1:12637 400 0s Apifox/1.0.0 (https://apifox.com)
+2026/02/24 05:22:15 middleware.go:109:   └─ 请求数据: {"password":"newpass123"}
+2026/02/24 05:22:15 middleware.go:119:   └─ 响应数据: {  "success": false,  "error": {   "code": "JSON_PARSE_ERROR",   "message": "JSON 解析失败",   "details": "json: unknown field \"password\""  } } 
+2026/02/24 05:22:34 auth_middleware.go:84: [认证成功] 用户: admin (ID: 1, 角色: admin) - POST /api/setting
+2026/02/24 05:22:34 middleware.go:94: [POST] /api/setting 127.0.0.1:12637 404 0s Apifox/1.0.0 (https://apifox.com)
+2026/02/24 05:22:34 middleware.go:109:   └─ 请求数据: {"password":"newpass123"}
+2026/02/24 05:22:34 middleware.go:121:   └─ 响应数据: 404 page not found
+2026/02/24 05:22:47 auth_middleware.go:84: [认证成功] 用户: admin (ID: 1, 角色: admin) - POST /api/settings
+2026/02/24 05:22:47 middleware.go:94: [POST] /api/settings 127.0.0.1:12637 405 1.4573ms Apifox/1.0.0 (https://apifox.com)
+2026/02/24 05:22:47 middleware.go:109:   └─ 请求数据: {"password":"newpass123"}
+2026/02/24 05:22:47 middleware.go:121:   └─ 响应数据: 只接受PUT或PATCH请求
+2026/02/24 05:23:03 auth_middleware.go:84: [认证成功] 用户: admin (ID: 1, 角色: admin) - PUT /api/settings
+2026/02/24 05:23:03 middleware.go:94: [PUT] /api/settings 127.0.0.1:12637 200 38.0008ms Apifox/1.0.0 (https://apifox.com)
+2026/02/24 05:23:03 middleware.go:109:   └─ 请求数据: {"password":"newpass123"}
+2026/02/24 05:23:03 middleware.go:119:   └─ 响应数据: {  "message": "更新成功",  "user": {   "id": 1,   "username": "admin",   "email": "admin@example.com",   "role": "admin",   "created_at": "2026-02-24T05:19:19.7668465+08:00"  } } 
+2026/02/24 05:23:34 postjson.go:222: 日志文件切换到: ./logs/app-2026-02-24.log
+2026/02/24 05:23:52 middleware.go:94: [GET] /health [::1]:10601 200 0s Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36 Edg/145.0.0.0
+2026/02/24 05:24:56 middleware.go:94: [POST] /auth/login 127.0.0.1:10318 200 38.3519ms Apifox/1.0.0 (https://apifox.com)
+2026/02/24 05:24:56 middleware.go:109:   └─ 请求数据: {
+    "username":"admin",
+    "password":"admin123"
+}
+2026/02/24 05:24:56 middleware.go:119:   └─ 响应数据: {  "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoxLCJ1c2VybmFtZSI6ImFkbWluIiwicm9sZSI6ImFkbWluIiwidG9rZW5fdmVyc2lvbiI6MSwiaXNzIjoiUG9zdEpzb24iLCJleHAiOjE3NzE4ODkwOTYsImlhdCI6MTc3MTg4MTg5Nn0.wOsudE_FYt-Lv7p7VNYjP9-UFaeG8gie4xrnc3GsDhE",  "user": {   "id": 1,   "username": "admin",   "email": "admin@example.com",   "role": "admin",   "created_at": "2026-02-24T05:23:34.1043666+08:00"  } } 
+2026/02/24 05:34:58 postjson.go:222: 日志文件切换到: ./logs/app-2026-02-24.log
+2026/02/24 05:35:18 middleware.go:94: [GET] /health [::1]:5982 200 0s Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36 Edg/145.0.0.0
+2026/02/24 05:35:18 middleware.go:94: [GET] /favicon.ico [::1]:5982 404 0s Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36 Edg/145.0.0.0
+2026/02/24 05:35:18 middleware.go:109:   └─ 请求数据: 
+2026/02/24 05:35:18 middleware.go:121:   └─ 响应数据: 404 page not found
+2026/02/24 05:35:27 middleware.go:94: [POST] /auth/login 127.0.0.1:12188 200 37.8712ms Apifox/1.0.0 (https://apifox.com)
+2026/02/24 05:35:27 middleware.go:109:   └─ 请求数据: {
+    "username":"admin",
+    "password":"admin123"
+}
+2026/02/24 05:35:27 middleware.go:119:   └─ 响应数据: {  "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoxLCJ1c2VybmFtZSI6ImFkbWluIiwicm9sZSI6ImFkbWluIiwidG9rZW5fdmVyc2lvbiI6MSwiaXNzIjoiUG9zdEpzb24iLCJleHAiOjE3NzE4ODk3MjcsImlhdCI6MTc3MTg4MjUyN30.GMd9JLE7BCtYfHFPOJoeNAH9lA0a_NNRZ4KZhFH6_mI",  "user": {   "id": 1,   "username": "admin",   "email": "admin@example.com",   "role": "admin",   "created_at": "2026-02-24T05:34:58.1514029+08:00"  } } 
+2026/02/24 05:35:42 auth_middleware.go:78: [认证失败] PUT /api/settings - Token 已因重新登录或修改密码失效 (user=admin)
+2026/02/24 05:35:42 middleware.go:94: [PUT] /api/settings 127.0.0.1:12204 401 515.7µs Apifox/1.0.0 (https://apifox.com)
+2026/02/24 05:35:42 middleware.go:109:   └─ 请求数据: {"password":"newpass123"}
+2026/02/24 05:35:42 middleware.go:121:   └─ 响应数据: 令牌已失效，请重新登录
+2026/02/24 05:35:55 auth_middleware.go:84: [认证成功] 用户: admin (ID: 1, 角色: admin) - PUT /api/settings
+2026/02/24 05:35:55 middleware.go:94: [PUT] /api/settings 127.0.0.1:12204 200 38.1361ms Apifox/1.0.0 (https://apifox.com)
+2026/02/24 05:35:55 middleware.go:109:   └─ 请求数据: {"password":"newpass123"}
+2026/02/24 05:35:55 middleware.go:119:   └─ 响应数据: {  "message": "更新成功",  "user": {   "id": 1,   "username": "admin",   "email": "admin@example.com",   "role": "admin",   "created_at": "2026-02-24T05:23:34.1043666+08:00"  } } 
+2026/02/24 05:36:08 postjson.go:183: 正在关闭服务器...
+2026/02/24 05:36:08 postjson.go:192: 服务器已关闭
+2026/02/24 05:36:36 postjson.go:222: 日志文件切换到: ./logs/app-2026-02-24.log
+2026/02/24 05:36:48 server.go:3650: http: TLS handshake error from [::1]:11314: client sent an HTTP request to an HTTPS server
+2026/02/24 05:36:52 middleware.go:94: [GET] /health [::1]:7940 200 0s Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36 Edg/145.0.0.0
+2026/02/24 05:36:52 middleware.go:94: [GET] /favicon.ico [::1]:7940 404 0s Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36 Edg/145.0.0.0
+2026/02/24 05:36:52 middleware.go:109:   └─ 请求数据: 
+2026/02/24 05:36:52 middleware.go:121:   └─ 响应数据: 404 page not found
+2026/02/24 05:36:54 middleware.go:94: [GET] /health [::1]:7940 200 0s Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36 Edg/145.0.0.0
+2026/02/24 05:36:58 server.go:3650: http: TLS handshake error from [::1]:6909: read tcp [::1]:8080->[::1]:6909: i/o timeout
+2026/02/24 05:36:58 server.go:3650: http: TLS handshake error from [::1]:8529: read tcp [::1]:8080->[::1]:8529: i/o timeout
+2026/02/24 05:37:00 server.go:3650: http: TLS handshake error from [::1]:8219: client sent an HTTP request to an HTTPS server
+2026/02/24 05:37:01 server.go:3650: http: TLS handshake error from [::1]:8722: client sent an HTTP request to an HTTPS server
+2026/02/24 05:37:01 server.go:3650: http: TLS handshake error from [::1]:1398: client sent an HTTP request to an HTTPS server
+2026/02/24 05:37:06 server.go:3650: http: TLS handshake error from [::1]:2552: client sent an HTTP request to an HTTPS server
+2026/02/24 05:37:07 server.go:3650: http: TLS handshake error from 127.0.0.1:6298: client sent an HTTP request to an HTTPS server
+2026/02/24 05:37:11 middleware.go:94: [POST] /auth/login 127.0.0.1:6304 200 39.3362ms Apifox/1.0.0 (https://apifox.com)
+2026/02/24 05:37:11 middleware.go:109:   └─ 请求数据: {
+    "username":"admin",
+    "password":"admin123"
+}
+2026/02/24 05:37:11 middleware.go:119:   └─ 响应数据: {  "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoxLCJ1c2VybmFtZSI6ImFkbWluIiwicm9sZSI6ImFkbWluIiwidG9rZW5fdmVyc2lvbiI6MSwiaXNzIjoiUG9zdEpzb24iLCJleHAiOjE3NzE4ODk4MzEsImlhdCI6MTc3MTg4MjYzMX0.F2ZMiyFQ68tTJ6S-FwnQianS4oottb0CSvdpBX-N3Hg",  "user": {   "id": 1,   "username": "admin",   "email": "admin@example.com",   "role": "admin",   "created_at": "2026-02-24T05:36:36.895778+08:00"  } } 
+2026/02/24 05:37:11 server.go:3650: http: TLS handshake error from [::1]:11269: read tcp [::1]:8080->[::1]:11269: i/o timeout
+2026/02/24 05:37:35 auth_middleware.go:84: [认证成功] 用户: admin (ID: 1, 角色: admin) - PUT /api/json
+2026/02/24 05:37:35 middleware.go:94: [PUT] /api/json 127.0.0.1:6304 405 0s Apifox/1.0.0 (https://apifox.com)
+2026/02/24 05:37:35 middleware.go:109:   └─ 请求数据: {"password":"newpass123"}
+2026/02/24 05:37:35 middleware.go:119:   └─ 响应数据: {  "success": false,  "error": {   "code": "METHOD_NOT_ALLOWED",   "message": "只接受 POST 请求"  } } 
+2026/02/24 05:37:58 postjson.go:183: 正在关闭服务器...
+2026/02/24 05:37:58 postjson.go:192: 服务器已关闭
+2026/02/24 05:38:32 postjson.go:222: 日志文件切换到: ./logs/app-2026-02-24.log
+2026/02/24 05:38:38 middleware.go:94: [GET] /health [::1]:2319 200 0s Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36 Edg/145.0.0.0
+2026/02/24 05:38:59 middleware.go:94: [POST] /auth/login 127.0.0.1:1886 200 40.0818ms Apifox/1.0.0 (https://apifox.com)
+2026/02/24 05:38:59 middleware.go:109:   └─ 请求数据: {
+    "username":"admin",
+    "password":"admin123"
+}
+2026/02/24 05:38:59 middleware.go:119:   └─ 响应数据: {  "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoxLCJ1c2VybmFtZSI6ImFkbWluIiwicm9sZSI6ImFkbWluIiwidG9rZW5fdmVyc2lvbiI6MSwiaXNzIjoiUG9zdEpzb24iLCJleHAiOjE3NzE4ODk5MzksImlhdCI6MTc3MTg4MjczOX0.HkskiZuHcUtDAX0J9x2MXr7SCqWye7fhnKp6a4wYN2o",  "user": {   "id": 1,   "username": "admin",   "email": "admin@example.com",   "role": "admin",   "created_at": "2026-02-24T05:38:32.2577536+08:00"  } } 
+2026/02/24 05:39:09 postjson.go:183: 正在关闭服务器...
+2026/02/24 05:39:09 postjson.go:192: 服务器已关闭
