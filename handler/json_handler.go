@@ -167,3 +167,8 @@ func (h *JSONHandler) sendJSONError(w http.ResponseWriter, code, message string,
 
 	h.sendJSONResponse(w, response, status)
 }
+
+// func (h *JSONHandler) TestPanic(w http.ResponseWriter, r *http.Request) {
+// 	// 故意制造 panic
+// 	panic("测试崩溃！看服务还能不能继续运行")
+// }

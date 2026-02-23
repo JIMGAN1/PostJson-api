@@ -42,7 +42,8 @@ func main() {
 	mux := http.NewServeMux()
 	mux.HandleFunc("/api-json", jsonHandler.ProcessJSON)
 	mux.HandleFunc("/health", healthCheck)
-
+	//测试panic
+	// mux.HandleFunc("/test-panic", jsonHandler.TestPanic)
 	// 构建中间件链
 	var handler http.Handler = mux
 
