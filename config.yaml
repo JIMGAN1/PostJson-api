@@ -31,7 +31,7 @@ server:
 # ---------- HTTPS配置 ----------
 https:
   # 是否启用HTTPS
-  enabled: false  # 本地开发先用false，用HTTP测试
+  enabled: false  # HTTPS需要证书
   
   # 证书配置（当enabled为true时需要）
   # 本地开发用mkcert生成的证书
@@ -50,7 +50,7 @@ auth:
   # false: 无需认证（兼容旧版本）
   enabled: true
   
-  # JWT密钥（生产环境请使用复杂字符串）
+  # JWT密钥（生产环境改复杂32位以上随机字符串）
   jwt_secret: "your-256-bit-secret-key-change-in-production"
   
   # Token过期时间
