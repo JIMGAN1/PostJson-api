@@ -20,13 +20,13 @@
 - Git
 
 ### 接口列表
-端点	        方法    认证	    说明
-/health	        GET	    ❌	    健康检查
-/auth/login	    POST	❌	    用户登录
-/auth/register	POST	❌	    用户注册
-/api/profile	GET	    ✅	    获取用户信息
-/api/settings	PUT	    ✅	    修改用户设置
-/api/json	    POST	✅	    JSON 数据处理
+- 📝 **端点	            方法    认证	    说明
+- ⚙️ **/health	        GET	    ❌	    健康检查
+- ⚙️ **/auth/login	    POST	  ❌	    用户登录
+- ⚙️ **/auth/register	  POST	  ❌	    用户注册
+- 🛡️ **/api/profile	  GET	    ✅	    获取用户信息
+- 🛡️ **/api/settings	  PUT	    ✅	    修改用户设置
+- 🛡️ **/api/json	      POST	  ✅	    JSON 数据处理
 
 ### 安装运行
 ```bash
